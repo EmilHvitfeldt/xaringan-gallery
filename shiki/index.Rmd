@@ -8,6 +8,7 @@ output:
   xaringan::moon_reader:
     chakra: "libs/remark.js"
     lib_dir: libs
+    seal: false
     nature:
       highlightStyle: github
       highlightLines: true
