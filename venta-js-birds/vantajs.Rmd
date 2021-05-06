@@ -1,0 +1,68 @@
+---
+output:
+  xaringan::moon_reader:
+    seal: false
+    nature:
+      highlightLanguage: "r"
+      highlightStyle: "solarized-light"
+      beforeInit: ["https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js", "https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"]
+---
+
+class: no-padding
+
+```{css, echo=FALSE}
+.no-padding {
+  padding: 0;
+}
+
+#vantajs {
+  width: 100%; 
+  height: 100%;
+}
+```
+
+<div id="vantajs"></div>
+
+<script>
+VANTA.BIRDS({
+  el: "#vantajs",
+  backgroundColor: 0x76a3f5,
+  /* more options (Uncomment) */
+  //birdSize: 1.50,
+  //wingSpan: 21.00,
+  //speedLimit: 4.00,
+  //separation: 32.00,
+  //alignment: 33.00,
+  //cohesion: 33.00,
+  quantity: 2.00
+});
+</script>
+
+---
+
+# Hello Ninja
+
+As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
+
+1. The [remark.js](https://remarkjs.com) library;
+
+1. The **xaringan** package;
+
+Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
+
+---
+
+```{r, eval=FALSE}
+# The easiest way to get ggplot2 is to install the whole tidyverse:
+install.packages("tidyverse")
+
+# Alternatively, install just ggplot2:
+install.packages("ggplot2")
+
+# Or the development version from GitHub:
+# install.packages("devtools")
+devtools::install_github("tidyverse/ggplot2")
+
+NA_real_
+```
+

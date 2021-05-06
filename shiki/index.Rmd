@@ -1,0 +1,33 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    chakra: "libs/remark.js"
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["https://unpkg.com/shiki", "libs/shiki-trial.js"]
+---
+
+```{r, eval=FALSE}
+# The easiest way to get ggplot2 is to install the whole tidyverse:
+install.packages("tidyverse")
+
+# Alternatively, install just ggplot2:
+install.packages("ggplot2")
+
+# Or the development version from GitHub:
+# install.packages("devtools")
+devtools::install_github("tidyverse/ggplot2")
+
+NA_real_
+```
+
+
+
