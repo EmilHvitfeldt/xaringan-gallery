@@ -6,14 +6,14 @@ institute: "RStudio, PBC"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    chakra: "libs/remark.js"
     lib_dir: libs
+    chakra: "libs/remark.js"
     seal: false
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      beforeInit: ["https://unpkg.com/shiki"]
+      beforeInit: ["https://unpkg.com/shiki", "libs/shiki-trial.js"]
 ---
 
 # Title

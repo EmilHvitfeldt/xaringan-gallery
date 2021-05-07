@@ -27463,6 +27463,8 @@ function setClassFromProperties (element, properties) {
     .forEach(function (c) { utils.addClass(element, c); });
 }
 
+
+
 function highlightCodeBlocks (content, slideshow) {
   var codeBlocks = content.getElementsByTagName('code'),
       highlightLines = slideshow.getHighlightLines(),
@@ -27483,33 +27485,24 @@ function highlightCodeBlocks (content, slideshow) {
       return;
     }
 
-    shiki
-      .getHighlighter({
-        theme: 'github-light'
-      })
-      .then(highlighter => {
-        block.innerHTML = highlighter.codeToHtml(block.innerHTML, 'r')
-      });
+    if (highlightLines) {
+      meta = extractMetadata(block);
+    }
 
+    if (block.className !== '') {
+      highlighter.engine.highlightBlock(block, '  ');
+    }
 
-    //if (highlightLines) {
-    //  meta = extractMetadata(block);
-    //}
-//
-    //if (block.className !== '') {
-    //  highlighter.engine.highlightBlock(block, '  ');
-    //}
-//
-    //wrapLines(block);
-//
-    //if (highlightLines) {
-    //  highlightBlockLines(block, meta.highlightedLines);
-    //}
-//
-    //if (highlightSpans) {
-    //  // highlightSpans is either true or a RegExp
-    //  highlightBlockSpans(block, highlightSpans);
-    //}
+    wrapLines(block);
+
+    if (highlightLines) {
+      highlightBlockLines(block, meta.highlightedLines);
+    }
+
+    if (highlightSpans) {
+      // highlightSpans is either true or a RegExp
+      highlightBlockSpans(block, highlightSpans);
+    }
 
     utils.addClass(block, 'remark-code');
   });
