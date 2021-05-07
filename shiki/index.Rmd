@@ -7,7 +7,6 @@ date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    chakra: "libs/remark.js"
     seal: false
     nature:
       highlightStyle: github
@@ -20,8 +19,7 @@ output:
 
 ```{r, eval=FALSE}
 # The easiest way to get ggplot2 is to install the whole tidyverse:
-install.packages("tidyverse")
-
+install.packages("tidyverse") + 5
 # Alternatively, install just ggplot2:
 install.packages("ggplot2")
 
