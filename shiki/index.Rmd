@@ -29,3 +29,18 @@ devtools::install_github("tidyverse/ggplot2")
 
 NA_real_
 ```
+
+---
+
+# Language aware
+
+```{js,  eval=FALSE}
+var element = document.getElementById("myCode");
+Shiki.highlight(element); //The text inside myCode div will automatically be highlighted
+```
+
+```{r,  eval=FALSE}
+var element = document.getElementById("myCode");
+Shiki.highlight(element); //The text inside myCode div will automatically be highlighted
+```
+

@@ -14,7 +14,8 @@ function shiki_wrapper (block) {
         const replaceWith = '<div class="remark-code-line"> </div>';
         block.innerHTML = block.innerHTML.split(search).join(replaceWith);
 
-        block.innerHTML = highlighter.codeToHtml(block.innerText, 'r')
+        codeLanguage = block.className.replace(" remark-code","")
+        block.innerHTML = highlighter.codeToHtml(block.innerText, codeLanguage)
       });
 };
 
