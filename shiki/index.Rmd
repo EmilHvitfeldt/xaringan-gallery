@@ -12,7 +12,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      beforeInit: ["https://unpkg.com/shiki", "libs/shiki-trial.js"]
+      beforeInit: ["https://unpkg.com/shiki", "libs/shiki-addon.js"]
 ---
 
 # Title
