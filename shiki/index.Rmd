@@ -13,8 +13,10 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      beforeInit: ["https://unpkg.com/shiki", "libs/shiki-trial.js"]
+      beforeInit: ["https://unpkg.com/shiki"]
 ---
+
+# Title
 
 ```{r, eval=FALSE}
 # The easiest way to get ggplot2 is to install the whole tidyverse:
@@ -29,6 +31,3 @@ devtools::install_github("tidyverse/ggplot2")
 
 NA_real_
 ```
-
-
-
