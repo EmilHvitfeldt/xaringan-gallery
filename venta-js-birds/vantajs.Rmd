@@ -21,6 +21,8 @@ class: no-padding
 }
 ```
 
+# Hello
+
 <div id="vantajs"></div>
 
 <script>
@@ -37,6 +39,7 @@ VANTA.BIRDS({
   quantity: 2.00
 });
 </script>
+
 
 ---
 
