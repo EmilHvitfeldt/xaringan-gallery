@@ -1,0 +1,46 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["https://unpkg.com/shiki", "libs/shiki-addon.js"]
+---
+
+# Title
+
+```{r, eval=FALSE}
+# The easiest way to get ggplot2 is to install the whole tidyverse:
+install.packages("tidyverse") + 5
+# Alternatively, install just ggplot2:
+install.packages("ggplot2")
+
+# Or the development version from GitHub:
+# install.packages("devtools")
+devtools::install_github("tidyverse/ggplot2")
+
+NA_real_
+```
+
+---
+
+# Language aware
+
+```{js,  eval=FALSE}
+var element = document.getElementById("myCode");
+Shiki.highlight(element); //The text inside myCode div will automatically be highlighted
+```
+
+```{r,  eval=FALSE}
+var element = document.getElementById("myCode");
+Shiki.highlight(element); //The text inside myCode div will automatically be highlighted
+```
+

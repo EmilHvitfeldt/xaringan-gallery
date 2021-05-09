@@ -1,0 +1,42 @@
+---
+output:
+  xaringan::moon_reader:
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+layout: true
+
+# Header Section
+
+---
+
+## Sub section 1
+
+The header with `layout: true` will be keep, 
+but whats on this slide is addded on
+
+---
+
+## Sub section 2
+
+And this continues forever. And must be turned 
+off with `layout: false`
+
+---
+
+layout: false
+
+Now we repeat
+
+---
+
+1
+
+---
+
+2

@@ -1,0 +1,41 @@
+---
+title: "layout property"
+description: |
+  The layout property can be used to create layout slides
+author:
+  - name: Emil Hvitfeldt
+date: 05-08-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - remark properties
+  - layout
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The `layout` property comes from the [remark](https://github.com/gnab/remark/wiki/Markdown#layout) library. It setting `layout: true` makes the current slide a layout slide, which is omitted from the slideshow and serves as the default template used for all subsequent slides.
+
+Setting `layout: false` reverts to using no default template.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../layout-property/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Code
+
+```{r, echo=FALSE}
+htmltools::pre(class = "xaringan",
+  paste0(readr::read_lines("../../layout-property/index.Rmd"), collapse = "\n")
+)
+```
+

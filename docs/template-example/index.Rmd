@@ -1,0 +1,36 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+name: other-slide
+
+Some content.
+
+---
+
+We are having fun
+
+---
+
+name: take-two
+template: other-slide
+
+Content appended to other-slide's content.
+
+---
+
+template: take-two
+
+And so much more
