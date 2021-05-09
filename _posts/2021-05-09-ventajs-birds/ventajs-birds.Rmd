@@ -1,0 +1,35 @@
+---
+title: "venta.js birds"
+description: |
+  A short description of the post.
+author:
+  - name: Emil Hvitfeldt
+date: 05-09-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - vanta.js
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The [Vanta.js](https://www.vantajs.com/) provides beautiful animated Javascript backgrounds.
+
+# Result 
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../venta-js-birds/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../venta-js-birds/index.Rmd"), sep = "\n")
+```

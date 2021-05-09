@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>vantajs.knit</title>
+    <title>index.knit</title>
     <meta charset="utf-8" />
-    <script src="vantajs_files/header-attrs-2.7.13/header-attrs.js"></script>
-    <link href="vantajs_files/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="vantajs_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <script src="index_files/header-attrs-2.7.13/header-attrs.js"></script>
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="index_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
@@ -24,8 +24,6 @@ class: no-padding
 }
 &lt;/style&gt;
 
-# Hello
-
 &lt;div id="vantajs"&gt;&lt;/div&gt;
 
 &lt;script&gt;
@@ -39,48 +37,22 @@ VANTA.BIRDS({
   //separation: 32.00,
   //alignment: 33.00,
   //cohesion: 33.00,
-  quantity: 2.00
+  quantity: 4.00
 });
 &lt;/script&gt;
 
-
 ---
 
-# Hello Ninja
-
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
-
-1. The [remark.js](https://remarkjs.com) library;
-
-1. The **xaringan** package;
-
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
-
----
-
-
-```r
-# The easiest way to get ggplot2 is to install the whole tidyverse:
-install.packages("tidyverse")
-
-# Alternatively, install just ggplot2:
-install.packages("ggplot2")
-
-# Or the development version from GitHub:
-# install.packages("devtools")
-devtools::install_github("tidyverse/ggplot2")
-
-NA_real_
-```
-
+# Next Slide
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightLanguage": "r",
-"highlightStyle": "solarized-light"
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
@@ -146,7 +118,24 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();</script>
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 slideshow._releaseMath = function(el) {
