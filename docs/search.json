@@ -5,21 +5,7 @@
       "title": "Reproducible Finance with R",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-08T23:49:51-07:00"
-    },
-    {
-      "path": "layout-example.html",
-      "title": "layout example",
-      "description": "The layout property can be used to create layout slides\n",
-      "author": [
-        {
-          "name": "Emil Hvitfeldt",
-          "url": "https://www.hvitfeldt.me/"
-        }
-      ],
-      "date": "`r Sys.Date()`",
-      "contents": "\nThe layout property comes from the remark library. It setting layout: true makes the current slide a layout slide, which is omitted from the slideshow and serves as the default template used for all subsequent slides.\nSetting layout: false reverts to using no default template.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nCode\n\n---\noutput:\n  xaringan::moon_reader:\n    seal: false\n    lib_dir: libs\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nlayout: true\n\n# Header Section\n\n---\n\n## Sub section 1\n\nThe header with `layout: true` will be keep, \nbut whats on this slide is addded on\n\n---\n\n## Sub section 2\n\nAnd this continues forever. And must be turned \noff with `layout: false`\n\n---\n\nlayout: false\n\nNow we repeat\n\n---\n\n1\n\n---\n\n2\n\n\n\n\n",
-      "last_modified": "2021-05-08T23:49:52-07:00"
+      "last_modified": "2021-05-09T00:45:30-07:00"
     }
   ],
   "collections": ["posts/posts.json"]

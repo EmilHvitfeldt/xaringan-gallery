@@ -2184,11 +2184,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
 
-  d-article pre.xaringan {
+  d-article pre.rmd {
     padding-left: 10px;
     font-size: 12px;
     border: 2px solid rgb(124 137 230);
     background-color: rgb(244 245 255);
+  }
+
+  d-article pre.js {
+    padding-left: 10px;
+    font-size: 12px;
+    border: 2px solid rgb(230 124 124);
+    background-color: rgb(255 244 244);
   }</style>
   <style type="text/css">
   /* base style */
@@ -2540,6 +2547,25 @@ function init_posts_list() {
 <p>The layout property can be used to create layout slides</p>
 </div>
 </a>
+<a href="posts/2021-05-09-shiki/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["syntax highlighting"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 8, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-05-09-shiki/preview.png"/>
+</div>
+<div class="description">
+<h2>shiki syntax highlighting</h2>
+<div class="dt-tags">
+<div class="dt-tag">syntax highlighting</div>
+</div>
+<p>Beautiful syntax highlighting with shiki</p>
+</div>
+</a>
 </div>
 <div class="posts-sidebar">
 <div class="sidebar-section categories">
@@ -2547,7 +2573,7 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:articles">articles</a>
-<span class="category-count">(1)</span>
+<span class="category-count">(2)</span>
 </li>
 <li>
 <a href="#category:layout">layout</a>
@@ -2555,6 +2581,10 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:remark_properties">remark properties</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:syntax_highlighting">syntax highlighting</a>
 <span class="category-count">(1)</span>
 </li>
 </ul>

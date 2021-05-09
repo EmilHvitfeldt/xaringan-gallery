@@ -14,9 +14,28 @@
       "remark properties",
       "layout"
     ],
-    "contents": "\nThe layout property comes from the remark library. It setting layout: true makes the current slide a layout slide, which is omitted from the slideshow and serves as the default template used for all subsequent slides.\nSetting layout: false reverts to using no default template.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nCode\n\n---\noutput:\n  xaringan::moon_reader:\n    seal: false\n    lib_dir: libs\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nlayout: true\n\n# Header Section\n\n---\n\n## Sub section 1\n\nThe header with `layout: true` will be keep, \nbut whats on this slide is addded on\n\n---\n\n## Sub section 2\n\nAnd this continues forever. And must be turned \noff with `layout: false`\n\n---\n\nlayout: false\n\nNow we repeat\n\n---\n\n1\n\n---\n\n2\n\n\n\n\n",
+    "contents": "\nThe layout property comes from the remark library. It setting layout: true makes the current slide a layout slide, which is omitted from the slideshow and serves as the default template used for all subsequent slides.\nSetting layout: false reverts to using no default template.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n````\n---\noutput:\n  xaringan::moon_reader:\n    seal: false\n    lib_dir: libs\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nlayout: true\n\n# Header Section\n\n---\n\n## Sub section 1\n\nThe header with `layout: true` will be keep, \nbut whats on this slide is addded on\n\n---\n\n## Sub section 2\n\nAnd this continues forever. And must be turned \noff with `layout: false`\n\n---\n\nlayout: false\n\nNow we repeat\n\n---\n\n1\n\n---\n\n2\n````\n\n\n\n\n",
     "preview": "posts/2021-05-08-layout-example/preview.png",
-    "last_modified": "2021-05-08T23:55:50-07:00",
-    "input_file": "layout-property.knit.md"
+    "last_modified": "2021-05-09T00:33:43-07:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-05-09-shiki/",
+    "title": "shiki syntax highlighting",
+    "description": "Beautiful syntax highlighting with shiki",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-08",
+    "categories": [
+      "syntax highlighting"
+    ],
+    "contents": "\nThe shiki Javascript library provides beautiful syntax highlighting.\nTo use this highlighter, specify beforeInit: [\"https://unpkg.com/shiki\", \"shiki-addon.js\"] in nature and include shiki-addon.js at same folder as your rmd file.\nThe theme can be changed in shiki-addon.js with avaliable themes are listed here.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\ntitle: \"Presentation Ninja\"\nsubtitle: \"⚔<br/>with xaringan\"\nauthor: \"Yihui Xie\"\ninstitute: \"RStudio, PBC\"\ndate: \"2016/12/12 (updated: `r Sys.Date()`)\"\noutput:\n  xaringan::moon_reader:\n    lib_dir: libs\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n      beforeInit: [\"https://unpkg.com/shiki\", \n                   \"shiki-addon.js\"]\n---\n\n# Title\n\n```{r, eval=FALSE}\ninstall.packages(\"tidyverse\")\n# Alternatively, install just ggplot2:\ninstall.packages(\"ggplot2\")\n\n# Or the development version from GitHub:\n# install.packages(\"devtools\")\ndevtools::install_github(\"tidyverse/ggplot2\")\n\nNA_real_\n```\n\n---\n\n# Language aware\n\n```{js,  eval=FALSE}\nvar element = document.getElementById(\"myCode\");\nShiki.highlight(element);\n```\n\nshiki-addon.js\n\nremark.highlighter.engine.highlightBlock = (block, temp) => {\n   shiki_wrapper(block)\n};\n\nfunction shiki_wrapper (block) {\n    shiki\n      .getHighlighter({\n        theme: 'github-light'\n      })\n      .then(highlighter => {\n\n        // Add spaces to empty lines to avoid them being removed\n        const search = '<div class=\"remark-code-line\"><\/div>';\n        const replaceWith = '<div class=\"remark-code-line\"> <\/div>';\n        block.innerHTML = block.innerHTML.split(search).join(replaceWith);\n\n        codeLanguage = block.className.replace(\" remark-code\",\"\")\n        block.innerHTML = highlighter.codeToHtml(block.innerText, codeLanguage)\n      });\n};\n\n\n\n\n",
+    "preview": "posts/2021-05-09-shiki/preview.png",
+    "last_modified": "2021-05-09T00:43:49-07:00",
+    "input_file": {}
   }
 ]

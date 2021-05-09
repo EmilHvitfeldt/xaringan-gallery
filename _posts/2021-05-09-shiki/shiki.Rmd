@@ -1,0 +1,45 @@
+---
+title: "shiki syntax highlighting"
+description: |
+  Beautiful syntax highlighting with shiki
+author:
+  - name: Emil Hvitfeldt
+date: 05-08-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - syntax highlighting
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The [shiki](https://github.com/shikijs/shiki) Javascript library provides beautiful syntax highlighting.
+
+To use this highlighter, specify `beforeInit: ["https://unpkg.com/shiki", "shiki-addon.js"]` in `nature` and include `shiki-addon.js` at same folder as your rmd file.
+
+The theme can be changed in `shiki-addon.js` with avaliable themes are listed [here](https://github.com/shikijs/shiki/blob/master/docs/themes.md#all-themes).
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../shiki/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../shiki/index.Rmd"), sep = "\n")
+```
+
+# shiki-addon.js
+
+```{r, echo=FALSE, class.output = "js"}
+cat(readr::read_lines("../../shiki/shiki-addon.js"), sep = "\n")
+```

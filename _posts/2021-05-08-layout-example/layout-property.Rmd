@@ -31,11 +31,8 @@ xaringanExtra::embed_xaringan(
 )
 ```
 
-# Code
+# Rmd
 
-```{r, echo=FALSE}
-htmltools::pre(class = "xaringan",
-  paste0(readr::read_lines("../../layout-property/index.Rmd"), collapse = "\n")
-)
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../layout-property/index.Rmd"), sep = "\n")
 ```
-

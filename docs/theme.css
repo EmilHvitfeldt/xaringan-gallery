@@ -76,9 +76,16 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 
-d-article pre.xaringan {
+d-article pre.rmd {
   padding-left: 10px;
   font-size: 12px;
   border: 2px solid rgb(124 137 230);
   background-color: rgb(244 245 255);
+}
+
+d-article pre.js {
+  padding-left: 10px;
+  font-size: 12px;
+  border: 2px solid rgb(230 124 124);
+  background-color: rgb(255 244 244);
 }
