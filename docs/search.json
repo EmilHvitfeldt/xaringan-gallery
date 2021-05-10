@@ -2,10 +2,10 @@
   "articles": [
     {
       "path": "index.html",
-      "title": "Reproducible Finance with R",
+      "title": "Examples",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-09T01:05:40-07:00"
+      "last_modified": "2021-05-09T20:38:26-07:00"
     }
   ],
   "collections": ["posts/posts.json"]

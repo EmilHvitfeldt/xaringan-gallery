@@ -1,5 +1,24 @@
 [
   {
+    "path": "posts/2021-05-09-particle-images/",
+    "title": "particles images",
+    "description": "Floating hex stickers",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-09",
+    "categories": [
+      "syntax highlighting"
+    ],
+    "contents": "\nThe particles.js is a fun library for creating organic particle effects. This example shows how a modified particles.js script allows you to create floating hex stickers.\nAll the magic is happening in a .html file where all the effects are created then inserted into the xaringan slides using iframes.\nPlease note that you are not allowed to advance slides if you click on this iframe, and you need to click on the slide number (lower right) to be able to advance. (If you know how to fix this, please file an issue)\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    lib_dir: libs\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nclass: no-padding\n\n```{css, echo=FALSE}\n.no-padding {\n  padding: 0;\n}\n```\n\n<iframe src=\"particles/particles.html\" \nwidth=\"100%\" height=\"100%\" frameBorder=\"0\">\n<\/iframe>\n\n---\n\n# xaringan\n\nRest of files\nhere\n\n\n\n",
+    "preview": "posts/2021-05-09-particle-images/preview.png",
+    "last_modified": "2021-05-09T18:23:23-07:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-05-09-ventajs-birds/",
     "title": "venta.js birds",
     "description": "A short description of the post.",
