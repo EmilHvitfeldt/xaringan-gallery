@@ -4,6 +4,7 @@ description: |
   Xaringan Gallery
 output_dir: "docs"
 theme: theme.css
+base_url: https://emilhvitfeldt.github.io/xaringan-gallery/
 navbar:
   right:
     - text: "Home"
