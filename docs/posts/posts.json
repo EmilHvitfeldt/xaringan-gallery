@@ -11,11 +11,11 @@
     ],
     "date": "2021-05-09",
     "categories": [
-      "syntax highlighting"
+      "css"
     ],
     "contents": "\nDrop caps are a fun way to add a little bit of flair to a paragraph.\nUsing the ::first-letter pseudo-element we can specifying the style of that is applied to the first letter of a paragraph.\nYou can go above and beyond and specify a custom font to be used in the drop-cap. The romantik font was used in this example.\nAll files found here.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"stylesheet.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample Header\n\n.drop-cap[\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n]\n\nstylesheet.js\n\n@font-face {\n    font-family: 'Romantik';\n    src: url('Romantik.woff2') format('woff2'),\n         url('Romantik.woff') format('woff');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n}\n\n.drop-cap::first-letter {\n    font-family: 'Romantik';\n    float: left;\n    font-size: 65px;\n    line-height: 70px;\n    padding-top: 10px;\n    padding-right: 8px;\n    padding-left: 3px;\n    margin-bottom: -15px;\n}\n\n\n\n\n",
     "preview": "posts/2021-05-09-fancy-first-letter/preview.png",
-    "last_modified": "2021-05-09T22:51:29-07:00",
+    "last_modified": "2021-05-09T23:29:39-07:00",
     "input_file": {},
     "preview_width": 720,
     "preview_height": 448
@@ -32,11 +32,11 @@
     ],
     "date": "2021-05-09",
     "categories": [
-      "syntax highlighting"
+      "particles.js"
     ],
     "contents": "\nThe particles.js is a fun library for creating organic particle effects. This example shows how a modified particles.js script allows you to create floating hex stickers.\nAll the magic is happening in a .html file where all the effects are created then inserted into the xaringan slides using iframes.\nPlease note that you are not allowed to advance slides if you click on this iframe, and you need to click on the slide number (lower right) to be able to advance. (If you know how to fix this, please file an issue)\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    lib_dir: libs\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nclass: no-padding\n\n```{css, echo=FALSE}\n.no-padding {\n  padding: 0;\n}\n```\n\n<iframe src=\"particles/particles.html\" \nwidth=\"100%\" height=\"100%\" frameBorder=\"0\">\n<\/iframe>\n\n---\n\n# xaringan\n\nRest of files\nhere\n\n\n\n",
     "preview": "posts/2021-05-09-particle-images/preview.png",
-    "last_modified": "2021-05-09T18:23:23-07:00",
+    "last_modified": "2021-05-09T23:29:52-07:00",
     "input_file": {},
     "preview_width": 2330,
     "preview_height": 1562
