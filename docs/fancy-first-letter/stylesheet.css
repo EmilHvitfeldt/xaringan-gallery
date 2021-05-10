@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Romantik';
+    src: url('Romantik.woff2') format('woff2'),
+         url('Romantik.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.drop-cap::first-letter {
+    font-family: 'Romantik';
+    float: left;
+    font-size: 65px;
+    line-height: 70px;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-left: 3px;
+    margin-bottom: -15px;
+}

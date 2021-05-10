@@ -1,0 +1,25 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["stylesheet.css"]
+    lib_dir: libs
+    seal: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Sample Header
+
+.drop-cap[
+Duis vel viverra elit, eget hendrerit odio. Curabitur 
+cursus elit nec diam vulputate, nec sollicitudin nunc 
+ornare. Ut mi lectus, aliquet non ligula sed, 
+lobortis vehicula erat. Morbi porttitor orci ut 
+semper dapibus. Donec sodales tellus varius tortor 
+varius, ornare commodo augue maximus. Vestibulum quis
+bibendum mi, sit amet lobortis leo. Morbi vulputate 
+orci arcu, ac lobortis sapien gravida eget. Nulla non
+interdum orci, nec congue ligula.
+]
