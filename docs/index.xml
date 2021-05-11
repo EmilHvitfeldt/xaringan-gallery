@@ -7,7 +7,17 @@
     <description>Xaringan Gallery
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>typed</title>
+      <dc:creator>Emil Hvitfeldt Hansen</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-11-typed</link>
+      <description>A short description of the post.</description>
+      <category>typed.js</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-11-typed</guid>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-11-typed/preview.png" medium="image" type="image/png" width="866" height="368"/>
+    </item>
     <item>
       <title>fancy first letter</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>

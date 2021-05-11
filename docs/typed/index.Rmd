@@ -1,0 +1,28 @@
+---
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: "typed.js"
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# .typed[]
+
+Lorem ipsum
+
+---
+
+.center[
+# Thank you!
+
+.typed2[]
+]
+
+```{r include=FALSE, echo=FALSE}
+icon::fa()
+```

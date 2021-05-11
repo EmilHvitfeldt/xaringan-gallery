@@ -1,0 +1,47 @@
+---
+title: "typed"
+description: |
+  A short description of the post.
+author:
+  - name: Emil Hvitfeldt Hansen
+date: 05-11-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - typed.js
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Animated self-typing can be a fun addition to your slides.
+
+These examples use the [Typed.js](https://github.com/mattboldt/typed.js/) javascript library to animate the text. The repository includes a handful of good examples and [a list of parameters](https://github.com/mattboldt/typed.js/#customization).
+
+Notes:
+
+I found that you must use all the typed objects you create for them to work in xaringan. E.i. If you want to used `.typed2[]` you must have called `.typed[]` as well. Furthermore, you can only use each typed object once.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../typed/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../typed/index.Rmd"), sep = "\n")
+```
+
+# typed.js
+
+```{r, echo=FALSE, class.output = "css"}
+cat(readr::read_lines("../../typed/typed.js"), sep = "\n")
+```

@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2021-05-11-typed/",
+    "title": "typed",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt Hansen",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-11",
+    "categories": [
+      "typed.js"
+    ],
+    "contents": "\nAnimated self-typing can be an fun addition to your slides.\nThese examples uses the Typed.js javascript library to animate the text. The repository includes a handful of good examples and a list of parameters.\nNotes:\nI found that you must use all the typed objects you create for them to work in xaringan. E.i. If you want to used .typed2[] you must have called .typed[] as well. Furthermore you can only use each typed object once.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    includes:\n      after_body: \"typed.js\"\n    lib_dir: libs\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# .typed[]\n\nLorem ipsum\n\n---\n\n.center[\n# Thank you!\n\n.typed2[]\n]\n\n```{r include=FALSE, echo=FALSE}\nicon::fa()\n```\n\ntyped.js\n\n<script src=\"https://cdn.jsdelivr.net/npm/typed.js@2.0.11\"><\/script>\n\n<script>\nconst typed = new Typed('.typed', {\n  strings: [\n    'Self typing text',\n    'Only using <b>typed.js<\/b>'\n  ],\n  typeSpeed: 60,\n  backSpeed: 20,\n  cursorChar: '',\n  loop: true\n});\n\nconst typed2 = new Typed('.typed2', {\n  strings: [\n  \"<i class='fab fa-github'/> Github_handle\",\n  \"<i class='fab fa-twitter'/> Twitter_handle\",\n  \"<i class='fab fa-linkedin'/> Linkedin_handle\",\n  \"<i class='fas fa-laptop'/> my-website.com\",\n  ],\n  typeSpeed: 50,\n  backDelay: 2000,\n  contentType: 'html',\n  loop: true\n});\n<\/script>\n\n\n\n\n",
+    "preview": "posts/2021-05-11-typed/preview.png",
+    "last_modified": "2021-05-11T16:10:23-07:00",
+    "input_file": {},
+    "preview_width": 866,
+    "preview_height": 368
+  },
+  {
     "path": "posts/2021-05-09-fancy-first-letter/",
     "title": "fancy first letter",
     "description": "Big first letters",
