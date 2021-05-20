@@ -30,7 +30,7 @@ All files found [here](https://github.com/EmilHvitfeldt/xaringan-gallery/tree/ma
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan(
-  url = "../../fancy-first-letter/index.html", 
+  url = "../../static/examples/fancy-first-letter/index.html", 
   ratio = "4:3"
 )
 ```
@@ -38,11 +38,11 @@ xaringanExtra::embed_xaringan(
 # Rmd
 
 ```{r, echo=FALSE, class.output = "rmd"}
-cat(readr::read_lines("../../fancy-first-letter/index.Rmd"), sep = "\n")
+cat(readr::read_lines("../../static/examples/fancy-first-letter/index.Rmd"), sep = "\n")
 ```
 
 # stylesheet.js
 
 ```{r, echo=FALSE, class.output = "css"}
-cat(readr::read_lines("../../fancy-first-letter/stylesheet.css"), sep = "\n")
+cat(readr::read_lines("../../static/examples/fancy-first-letter/stylesheet.css"), sep = "\n")
 ```

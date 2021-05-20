@@ -27,7 +27,7 @@ The theme can be changed in `shiki-addon.js` with avaliable themes are listed [h
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan(
-  url = "../../shiki/index.html", 
+  url = "../../static/examples/shiki/index.html", 
   ratio = "4:3"
 )
 ```
@@ -35,11 +35,11 @@ xaringanExtra::embed_xaringan(
 # Rmd
 
 ```{r, echo=FALSE, class.output = "rmd"}
-cat(readr::read_lines("../../shiki/index.Rmd"), sep = "\n")
+cat(readr::read_lines("../../static/examples/shiki/index.Rmd"), sep = "\n")
 ```
 
 # shiki-addon.js
 
 ```{r, echo=FALSE, class.output = "js"}
-cat(readr::read_lines("../../shiki/shiki-addon.js"), sep = "\n")
+cat(readr::read_lines("../../static/examples/shiki/shiki-addon.js"), sep = "\n")
 ```

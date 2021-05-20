@@ -26,7 +26,7 @@ Setting `layout: false` reverts to using no default template.
 
 ```{r, echo=FALSE}
 xaringanExtra::embed_xaringan(
-  url = "../../layout-property/index.html", 
+  url = "../../static/examples/layout-property/index.html", 
   ratio = "4:3"
 )
 ```
@@ -34,5 +34,5 @@ xaringanExtra::embed_xaringan(
 # Rmd
 
 ```{r, echo=FALSE, class.output = "rmd"}
-cat(readr::read_lines("../../layout-property/index.Rmd"), sep = "\n")
+cat(readr::read_lines("../../static/examples/layout-property/index.Rmd"), sep = "\n")
 ```
