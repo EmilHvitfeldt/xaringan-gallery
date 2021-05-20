@@ -25,6 +25,8 @@ Setting `layout: false` reverts to using no default template.
 # Result
 
 ```{r, echo=FALSE}
+
+
 xaringanExtra::embed_xaringan(
   url = "../../static/examples/layout-property/index.html", 
   ratio = "4:3"

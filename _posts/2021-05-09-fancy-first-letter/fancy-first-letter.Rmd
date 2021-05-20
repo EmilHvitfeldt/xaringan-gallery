@@ -41,7 +41,7 @@ xaringanExtra::embed_xaringan(
 cat(readr::read_lines("../../static/examples/fancy-first-letter/index.Rmd"), sep = "\n")
 ```
 
-# stylesheet.js
+# stylesheet.css
 
 ```{r, echo=FALSE, class.output = "css"}
 cat(readr::read_lines("../../static/examples/fancy-first-letter/stylesheet.css"), sep = "\n")

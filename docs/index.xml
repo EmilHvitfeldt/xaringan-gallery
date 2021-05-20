@@ -7,7 +7,18 @@
     <description>Xaringan Gallery
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Adjustable Pull</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-adjustable-pull</link>
+      <description>Adjust the widths of .pull-left and .pull-right</description>
+      <category>css</category>
+      <category>content classes</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-adjustable-pull</guid>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-adjustable-pull/preview.png" medium="image" type="image/png" width="2242" height="1518"/>
+    </item>
     <item>
       <title>typed</title>
       <dc:creator>Emil Hvitfeldt Hansen</dc:creator>
