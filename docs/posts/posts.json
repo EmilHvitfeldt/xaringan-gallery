@@ -22,6 +22,28 @@
     "preview_height": 1518
   },
   {
+    "path": "posts/2021-05-20-content-classes/",
+    "title": "Content Classes",
+    "description": "Use css to create content classes to style elements",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-20",
+    "categories": [
+      "css",
+      "content classes"
+    ],
+    "contents": "\nCustom content classes are a great way to quick style elements of your slides. Create a css class, here is a class called .orange which sets the color to orange.\n\n\n.orange {\n  color: orange;\n}\n\nIf you write .orange[some text] then it will be rendered as some text in the final document.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"stylesheet.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample .orange[Header]\n\n.bold[Duis vel viverra elit, eget hendrerit odio.] \nCurabitur cursus elit nec diam vulputate, nec \nsollicitudin nunc ornare. Ut mi lectus, aliquet \nnon ligula sed, lobortis vehicula erat. Morbi \nporttitor orci ut semper dapibus. Donec sodales \ntellus varius tortor varius, ornare commodo augue \nmaximus. Vestibulum quisbibendum mi, sit amet \nlobortis leo. Morbi vulputate orci arcu, ac lobortis\nsapien gravida eget. Nulla noninterdum orci, nec \ncongue ligula.\n\nstylesheet.css\n\n.bold {\n  font-weight: bold;\n}\n\n.orange {\n  color: orange;\n}\n\n\n\n\n",
+    "preview": "posts/2021-05-20-content-classes/preview.png",
+    "last_modified": "2021-05-20T19:20:30-07:00",
+    "input_file": {},
+    "preview_width": 1030,
+    "preview_height": 570
+  },
+  {
     "path": "posts/2021-05-11-typed/",
     "title": "typed",
     "description": "A short description of the post.",

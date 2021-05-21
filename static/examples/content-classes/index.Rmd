@@ -1,0 +1,24 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "stylesheet.css"]
+    lib_dir: libs
+    seal: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Sample .orange[Header]
+
+.bold[Duis vel viverra elit, eget hendrerit odio.] 
+Curabitur cursus elit nec diam vulputate, nec 
+sollicitudin nunc ornare. Ut mi lectus, aliquet 
+non ligula sed, lobortis vehicula erat. Morbi 
+porttitor orci ut semper dapibus. Donec sodales 
+tellus varius tortor varius, ornare commodo augue 
+maximus. Vestibulum quisbibendum mi, sit amet 
+lobortis leo. Morbi vulputate orci arcu, ac lobortis
+sapien gravida eget. Nulla noninterdum orci, nec 
+congue ligula.
