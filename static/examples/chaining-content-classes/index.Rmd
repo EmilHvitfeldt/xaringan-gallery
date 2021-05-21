@@ -1,0 +1,18 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "stylesheet.css"]
+    lib_dir: libs
+    seal: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Sample .italic.orange[Header]
+
+# Sample .orange.italic[Header]
+
+# Sample .italic[.orange[Header]]
+

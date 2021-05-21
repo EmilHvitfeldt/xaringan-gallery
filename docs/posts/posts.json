@@ -22,6 +22,28 @@
     "preview_height": 1518
   },
   {
+    "path": "posts/2021-05-20-chaining-content-classes/",
+    "title": "Chaining Content Classes",
+    "description": "Syntax trick for cleaner use of content classes",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-20",
+    "categories": [
+      "css",
+      "content classes"
+    ],
+    "contents": "\nContent classes are a great tool when creating xaringan slides. Chaining is a way to apply multiple content classes to the same element with a more concise syntax.\nIf you were to apply .italic and .orange to a word you could write it as .italic[.orange[word]] which is already bad with just 2 classes. Chaining allows us to write .italic.orange[word] to get the same result.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"stylesheet.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample .italic.orange[Header]\n\n# Sample .orange.italic[Header]\n\n# Sample .italic[.orange[Header]]\n\nstylesheet.css\n\n.italic {\n  font-style: italic;\n}\n\n.orange {\n  color: orange;\n}\n\n\n\n\n",
+    "preview": "posts/2021-05-20-chaining-content-classes/preview.png",
+    "last_modified": "2021-05-20T19:41:06-07:00",
+    "input_file": {},
+    "preview_width": 1414,
+    "preview_height": 864
+  },
+  {
     "path": "posts/2021-05-20-content-classes/",
     "title": "Content Classes",
     "description": "Use css to create content classes to style elements",

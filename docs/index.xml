@@ -20,6 +20,17 @@
       <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-adjustable-pull/preview.png" medium="image" type="image/png" width="2242" height="1518"/>
     </item>
     <item>
+      <title>Chaining Content Classes</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-chaining-content-classes</link>
+      <description>Syntax trick for cleaner use of content classes</description>
+      <category>css</category>
+      <category>content classes</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-chaining-content-classes</guid>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-chaining-content-classes/preview.png" medium="image" type="image/png" width="1414" height="864"/>
+    </item>
+    <item>
       <title>Content Classes</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/posts/2021-05-20-content-classes</link>
