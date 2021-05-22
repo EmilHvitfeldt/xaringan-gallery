@@ -1,5 +1,27 @@
 [
   {
+    "path": "examples/2021-05-22-no-padding-slide/",
+    "title": "No Padding Slide",
+    "description": "Create slides that contain no padding",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [
+      "css",
+      "content classes"
+    ],
+    "contents": "\nxaringan slides come with a default padding along all sides of the slide. If you want to have content that touches all the sides you can create a content class that removes padding and add it as a slide class.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"style.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nclass: full\n\n# Sample Header\n\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n\nstyle.css\n\n.full {\n  padding: 0px;\n}\n\n\n\n\n",
+    "preview": "examples/2021-05-22-no-padding-slide/preview.png",
+    "last_modified": "2021-05-22T12:48:05-07:00",
+    "input_file": {},
+    "preview_width": 1252,
+    "preview_height": 668
+  },
+  {
     "path": "examples/2021-05-21-nested-pulls/",
     "title": "Nested Pulls",
     "description": "The layout property can be used to create layout slides",

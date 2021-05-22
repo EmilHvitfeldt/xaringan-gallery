@@ -7,7 +7,18 @@
     <description>Xaringan Gallery
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 21 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>No Padding Slide</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-no-padding-slide</link>
+      <description>Create slides that contain no padding</description>
+      <category>css</category>
+      <category>content classes</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-no-padding-slide</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-no-padding-slide/preview.png" medium="image" type="image/png" width="1252" height="668"/>
+    </item>
     <item>
       <title>Nested Pulls</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>

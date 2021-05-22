@@ -1,0 +1,43 @@
+---
+title: "No Padding Slide"
+description: |
+  Create slides that contain no padding
+author:
+  - name: Emil Hvitfeldt
+    url: {}
+date: 05-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - css
+  - content classes
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+xaringan slides come with a default padding along all sides of the slide. If you want to have content that touches all the sides you can create a content class that removes padding and add it as a slide class.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/no-padding-slide/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/no-padding-slide/index.Rmd"), sep = "\n")
+```
+
+# style.css
+
+```{r, echo=FALSE, class.output = "css"}
+cat(readr::read_lines("../../static/examples/no-padding-slide/style.css"), sep = "\n")
+```
