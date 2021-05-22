@@ -1,0 +1,58 @@
+---
+title: "Side by Side Code and Plot"
+description: |
+  Show code and plot on same slide without copy-paste
+author:
+  - name: Emil Hvitfeldt
+    url: {}
+date: 05-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - plot
+  - pull
+preview: preview.gif
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+If you want to show your code AND plots you can use the `.pull-left[]` and `.pull-right[]` content classes. To avoid copy-paste of the code you can use some `knitr` magic to have the code shown in one place and have the results rendered another place.
+
+### Code first
+
+When you are doing code first you set the following options in the code chunk `chunkname, fig.show="hide"` and put
+
+```{r, eval=FALSE}
+knitr::include_graphics(
+  knitr::fig_chunk("chunkname", "png")
+)
+```
+
+where you want the figure to appear. The `chunkname` must match.
+
+### Plot first
+
+The previous approach does not work if you want the plot to appear before the text. To make this work you need to set the following chunk options
+
+- plot chunk: `ref.label="chunkname", echo=FALSE`
+- code chunk: `chunkname, fig.show='hide'`
+
+Note, if you want to do this multiple times in a slide deck you need to specify a different `chunkname` for each pair of chunks.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/side-by-side-code-plot/index.html", 
+  ratio = "16:9"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/side-by-side-code-plot/index.Rmd"), sep = "\n")
+```

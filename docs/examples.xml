@@ -67,6 +67,17 @@
       <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-omit-slide-number/preview.png" medium="image" type="image/png" width="2322" height="1712"/>
     </item>
     <item>
+      <title>Side by Side Code and Plot</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-side-by-side-code-plot</link>
+      <description>Show code and plot on same slide without copy-paste</description>
+      <category>plot</category>
+      <category>pull</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-side-by-side-code-plot</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-side-by-side-code-plot/preview.gif" medium="image" type="image/gif"/>
+    </item>
+    <item>
       <title>Transparent Backgrounds for Plot</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-transparent-plot</link>

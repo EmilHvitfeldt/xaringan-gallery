@@ -113,6 +113,26 @@
     "preview_height": 1712
   },
   {
+    "path": "examples/2021-05-22-side-by-side-code-plot/",
+    "title": "Side by Side Code and Plot",
+    "description": "Show code and plot on same slide without copy-paste",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [
+      "plot",
+      "pull"
+    ],
+    "contents": "\nIf you want to show your code AND plots you can use the .pull-left[] and .pull-right[] content classes. To avoid copy-paste of the code you can use some knitr magic to have the code shown in one place and have the results rendered another place.\nCode first\nWhen you are doing code first you set the following options in the code chunk chunkname, fig.show=\"hide\" and put\n\n\n\nwhere you want the figure to appear. The chunkname must match.\nPlot first\nThe previous approach does not work if you want the plot to appear before the text. To make this work you need to set the following chunk options\nplot chunk: ref.label=\"chunkname\", echo=FALSE\ncode chunk: chunkname, fig.show='hide'\nNote, if you want to do this multiple times in a slide deck you need to specify a different chunkname for each pair of chunks.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      ratio: \"16:9\"\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Side by Side: code first\n\n.pull-left[\n```{r code-first, fig.show=\"hide\", warning=FALSE}\nlibrary(ggplot2)\nlibrary(palmerpenguins)\ncolors <- c(\"darkorange\", \"purple\", \"cyan4\")\n\nggplot(penguins) +\n  aes(bill_length_mm, bill_depth_mm,\n      color = species) +\n  geom_point() +\n  theme_minimal() +\n  scale_color_manual(values = colors) +\n  labs(title = \"Bill depth and length\")\n```\n]\n\n.pull-right[\n```{r, echo=FALSE}\nknitr::include_graphics(\n  knitr::fig_chunk(\"code-first\", \"png\")\n)\n```\n]\n\n---\n\n# Side by Side: plot first\n\n.pull-left[\n```{r ref.label=\"plot-first\", echo=FALSE, warning=FALSE}\n```\n]\n\n.pull-right[\n```{r plot-first, fig.show=\"hide\", warning=FALSE}\nlibrary(ggplot2)\nlibrary(palmerpenguins)\ncolors <- c(\"darkorange\", \"purple\", \"cyan4\")\n\nggplot(penguins) +\n  aes(bill_length_mm, flipper_length_mm,\n      color = species) +\n  geom_point() +\n  theme_minimal() +\n  scale_color_manual(values = colors) +\n  labs(title = \"Bill and Flitter lengths\")\n```\n]\n\n\n\n\n",
+    "preview": "examples/2021-05-22-side-by-side-code-plot/preview.gif",
+    "last_modified": "2021-05-22T15:20:41-07:00",
+    "input_file": {}
+  },
+  {
     "path": "examples/2021-05-22-transparent-plot/",
     "title": "Transparent Backgrounds for Plot",
     "description": "Remove background of plots",

@@ -1,0 +1,69 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default"]
+    lib_dir: libs
+    seal: FALSE
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Side by Side: code first
+
+.pull-left[
+```{r code-first, fig.show="hide", warning=FALSE}
+library(ggplot2)
+library(palmerpenguins)
+colors <- c("darkorange", "purple", "cyan4")
+
+ggplot(penguins) +
+  aes(bill_length_mm, bill_depth_mm,
+      color = species) +
+  geom_point() +
+  theme_minimal() +
+  scale_color_manual(values = colors) +
+  labs(title = "Bill depth and length")
+```
+]
+
+.pull-right[
+```{r, echo=FALSE}
+knitr::include_graphics(
+  knitr::fig_chunk("code-first", "png")
+)
+```
+]
+
+---
+
+# Side by Side: plot first
+
+.pull-left[
+```{r ref.label="plot-first", echo=FALSE, warning=FALSE}
+```
+]
+
+.pull-right[
+```{r plot-first, fig.show="hide", warning=FALSE}
+library(ggplot2)
+library(palmerpenguins)
+colors <- c("darkorange", "purple", "cyan4")
+
+ggplot(penguins) +
+  aes(bill_length_mm, flipper_length_mm,
+      color = species) +
+  geom_point() +
+  theme_minimal() +
+  scale_color_manual(values = colors) +
+  labs(title = "Bill and Flitter lengths")
+```
+]
+
+
+
+
+
+
