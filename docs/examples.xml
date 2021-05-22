@@ -9,6 +9,18 @@
     <generator>Distill</generator>
     <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate>
     <item>
+      <title>Custom Cursor</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-custom-cursor</link>
+      <description>Add a custom cursor</description>
+      <category>css</category>
+      <category>content classes</category>
+      <category>cursor</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-custom-cursor</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-custom-cursor/preview.png" medium="image" type="image/png" width="812" height="516"/>
+    </item>
+    <item>
       <title>Code highlighting with flair</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-flair-highlight</link>

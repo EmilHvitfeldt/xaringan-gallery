@@ -1,0 +1,46 @@
+---
+title: "Custom Cursor"
+description: |
+  Add a custom cursor
+author:
+  - name: Emil Hvitfeldt
+    url: {}
+date: 05-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - css
+  - content classes
+  - cursor
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+A custom cursor can be used if you want a little better highlighting on a specific slide or plot.
+
+We use a content class and a .png file to create a custom cursor.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/custom-cursor/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/custom-cursor/index.Rmd"), sep = "\n")
+```
+
+# style.css
+
+```{r, echo=FALSE, class.output = "css"}
+cat(readr::read_lines("../../static/examples/custom-cursor/style.css"), sep = "\n")
+```
