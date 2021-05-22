@@ -9,6 +9,18 @@
     <generator>Distill</generator>
     <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate>
     <item>
+      <title>Code highlighting with flair</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-flair-highlight</link>
+      <description>Custom code highlighting with flair R package</description>
+      <category>code highlighting</category>
+      <category>syntax highlighting</category>
+      <category>flair</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-flair-highlight</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-flair-highlight/preview.png" medium="image" type="image/png" width="2184" height="1244"/>
+    </item>
+    <item>
       <title>Full Screen Plot</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-full-screen-plot</link>

@@ -1,0 +1,28 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default"]
+    lib_dir: libs
+    seal: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, echo=FALSE}
+library(flair)
+```
+
+# Highlighting code with {flair}
+
+```{r lm, include = FALSE}
+lm(mpg ~ disp, data = mtcars)
+```
+
+```{r lm_flair, echo = FALSE}
+decorate("lm") %>%
+  flair("mpg", color = "orange") %>%
+  flair("disp", color = "lightblue") %>%
+  flair("mtcars", color = "lightpink")
+```

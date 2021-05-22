@@ -1,5 +1,28 @@
 [
   {
+    "path": "examples/2021-05-22-flair-highlight/",
+    "title": "Code highlighting with flair",
+    "description": "Custom code highlighting with flair R package",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [
+      "code highlighting",
+      "syntax highlighting",
+      "flair"
+    ],
+    "contents": "\nThe flair package can be used to provide custom highlighting to code chunks. The most important thing is to make sure that the chunk names match.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n```{r setup, echo=FALSE}\nlibrary(flair)\n```\n\n# Highlighting code with {flair}\n\n```{r lm, include = FALSE}\nlm(mpg ~ disp, data = mtcars)\n```\n\n```{r lm_flair, echo = FALSE}\ndecorate(\"lm\") %>%\n  flair(\"mpg\", color = \"orange\") %>%\n  flair(\"disp\", color = \"lightblue\") %>%\n  flair(\"mtcars\", color = \"lightpink\")\n```\n\n\n\n\n",
+    "preview": "examples/2021-05-22-flair-highlight/preview.png",
+    "last_modified": "2021-05-22T13:47:36-07:00",
+    "input_file": {},
+    "preview_width": 2184,
+    "preview_height": 1244
+  },
+  {
     "path": "examples/2021-05-22-full-screen-plot/",
     "title": "Full Screen Plot",
     "description": "Properly size a plot to completely fill the slide",
