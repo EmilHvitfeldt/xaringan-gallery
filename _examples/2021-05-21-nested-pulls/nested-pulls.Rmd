@@ -1,0 +1,38 @@
+---
+title: "Nested Pulls"
+description: |
+  The layout property can be used to create layout slides
+author:
+  - name: Emil Hvitfeldt
+date: 05-21-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - pull
+  - content classes
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The `.pull-left[]` and `.pull-right[]` content classes are great in their own right to put material side by side.
+
+You can put a pair of `.pull-left[]` and `.pull-right[]` inside one of these to further subdivide the slide.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/nested-pulls/index.html", 
+  ratio = "16:9"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/nested-pulls/index.Rmd"), sep = "\n")
+```
