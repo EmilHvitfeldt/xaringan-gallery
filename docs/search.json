@@ -5,21 +5,21 @@
       "title": "Examples",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-22T13:05:38-07:00"
+      "last_modified": "2021-05-22T13:34:49-07:00"
     },
     {
       "path": "index.html",
       "title": "xaringan Gallery",
       "author": [],
       "contents": "\nWelcome!!\n\n\n\n",
-      "last_modified": "2021-05-22T13:05:38-07:00"
+      "last_modified": "2021-05-22T13:34:50-07:00"
     },
     {
       "path": "themes.html",
       "title": "Themes",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-22T13:05:39-07:00"
+      "last_modified": "2021-05-22T13:34:50-07:00"
     }
   ],
   "collections": ["examples/examples.json", "themes/themes.json"]

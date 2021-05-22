@@ -32,6 +32,16 @@
       <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-no-padding-slide/preview.png" medium="image" type="image/png" width="1252" height="668"/>
     </item>
     <item>
+      <title>Transparent Backgrounds for Plot</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-transparent-plot</link>
+      <description>Remove background of plots</description>
+      <category>plot</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-transparent-plot</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-transparent-plot/preview.png" medium="image" type="image/png" width="2290" height="1694"/>
+    </item>
+    <item>
       <title>Nested Pulls</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-21-nested-pulls</link>

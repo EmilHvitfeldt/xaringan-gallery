@@ -1,0 +1,34 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default"]
+    lib_dir: libs
+    seal: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+class: inverse
+
+# Transperent Background
+
+```{r, dev.args = list(bg = 'transparent'), fig.asp = 3/4, fig.align = 'center', echo = FALSE, out.width = "80%", dpi= 300, warning = FALSE}
+library(ggplot2)
+library(palmerpenguins)
+
+ggplot(penguins) +
+  aes(bill_length_mm, bill_depth_mm,
+      color = species) +
+  geom_point() +
+  theme_minimal() +
+  theme(
+    text = element_text(colour = "grey90"), 
+    axis.text = element_text(colour = "grey90"),
+    panel.grid  = element_line(colour = "grey70")
+  ) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(title = "Bill depth and length")
+```
+
