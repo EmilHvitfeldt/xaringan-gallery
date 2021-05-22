@@ -1,0 +1,44 @@
+---
+title: "Full Screen Plot"
+description: |
+  Properly size a plot to completely fill the slide
+author:
+  - name: Emil Hvitfeldt
+    url: {}
+date: 05-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - css
+  - content classes
+  - plot
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+To have a plot fill a slide you need to do 2 things. First, you need to create a content class that removes all the necessary padding and margins. Second, you need to set the proper chunk options to size the plot correctly. Note that the `fig.asp` must properly match the aspect ratio of your slides.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/full-screen-plot/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/full-screen-plot/index.Rmd"), sep = "\n")
+```
+
+# style.css
+
+```{r, echo=FALSE, class.output = "css"}
+cat(readr::read_lines("../../static/examples/full-screen-plot/style.css"), sep = "\n")
+```

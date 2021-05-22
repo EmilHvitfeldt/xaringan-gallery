@@ -9,6 +9,18 @@
     <generator>Distill</generator>
     <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate>
     <item>
+      <title>Full Screen Plot</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-full-screen-plot</link>
+      <description>Properly size a plot to completely fill the slide</description>
+      <category>css</category>
+      <category>content classes</category>
+      <category>plot</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-full-screen-plot</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-full-screen-plot/preview.png" medium="image" type="image/png" width="1262" height="958"/>
+    </item>
+    <item>
       <title>No Padding Slide</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-no-padding-slide</link>

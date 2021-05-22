@@ -1,5 +1,28 @@
 [
   {
+    "path": "examples/2021-05-22-full-screen-plot/",
+    "title": "Full Screen Plot",
+    "description": "Properly size a plot to completely fill the slide",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [
+      "css",
+      "content classes",
+      "plot"
+    ],
+    "contents": "\nTo have a plot fill a slide you need to do 2 things. First, you need to create a content class that removes all the necessary padding and margins. Second, you need to set the proper chunk options to size the plot correctly. Note that the fig.asp must properly match the aspect ratio of your slides.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"style.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nclass: full\n\n```{r, fig.asp = 3/4, fig.align = 'center', echo = FALSE, out.width = \"100%\", dpi= 300, warning = FALSE}\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\nggplot(penguins) +\n  aes(bill_length_mm, bill_depth_mm,\n      color = species) +\n  geom_point() +\n  theme_minimal() +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(title = \"Bill depth and length\")\n```\n\nstyle.css\n\n.full {\n  padding: 0px;\n}\n\n.full p {\n  margin-top: 0px;\n}\n\n\n\n\n",
+    "preview": "examples/2021-05-22-full-screen-plot/preview.png",
+    "last_modified": "2021-05-22T13:04:51-07:00",
+    "input_file": {},
+    "preview_width": 1262,
+    "preview_height": 958
+  },
+  {
     "path": "examples/2021-05-22-no-padding-slide/",
     "title": "No Padding Slide",
     "description": "Create slides that contain no padding",
