@@ -1,0 +1,21 @@
+---
+output:
+  xaringan::moon_reader:
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+class: center, inverse
+layout: true
+
+---
+
+# Hello world
+
+---
+
+# More slides

@@ -23,6 +23,27 @@
     "preview_height": 516
   },
   {
+    "path": "examples/2021-05-22-default-classes/",
+    "title": "Default Classes",
+    "description": "Setting default classes for all slides",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [
+      "layout"
+    ],
+    "contents": "\nSetting default classes is a great way to reduce type and increase uniformity in your slides.\nStart your first slide with\n\n\n\nand nothing else!\nThen all the following classes will have these classes including what to specify on a slide by slide basis.\nCan be turned of by setting\n\n\n\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    seal: false\n    lib_dir: libs\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nclass: center, inverse\nlayout: true\n\n---\n\n# Hello world\n\n---\n\n# More slides\n\n\n\n\n",
+    "preview": "examples/2021-05-22-default-classes/preview.png",
+    "last_modified": "2021-05-22T16:57:31-07:00",
+    "input_file": {},
+    "preview_width": 1550,
+    "preview_height": 770
+  },
+  {
     "path": "examples/2021-05-22-flair-highlight/",
     "title": "Code highlighting with flair",
     "description": "Custom code highlighting with flair R package",

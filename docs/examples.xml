@@ -21,6 +21,16 @@
       <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-custom-cursor/preview.png" medium="image" type="image/png" width="812" height="516"/>
     </item>
     <item>
+      <title>Default Classes</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-default-classes</link>
+      <description>Setting default classes for all slides</description>
+      <category>layout</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-default-classes</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-default-classes/preview.png" medium="image" type="image/png" width="1550" height="770"/>
+    </item>
+    <item>
       <title>Code highlighting with flair</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-flair-highlight</link>

@@ -1,0 +1,53 @@
+---
+title: "Default Classes"
+description: |
+  Setting default classes for all slides
+author:
+  - name: Emil Hvitfeldt
+    url: {}
+date: 05-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - layout
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Setting default classes is a great way to reduce type and increase uniformity in your slides.
+
+Start your first slide with
+
+```{r, eval=FALSE}
+class: your, classes, here
+layout: true
+```
+
+and nothing else!
+
+Then all the following classes will have these classes including what to specify on a slide by slide basis.
+
+Can be turned of by setting
+
+```{r, eval=FALSE}
+layout: false
+```
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/default-classes/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/default-classes/index.Rmd"), sep = "\n")
+```
