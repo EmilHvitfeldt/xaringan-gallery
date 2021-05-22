@@ -1,6 +1,5 @@
 ---
-title: "xaringan Gallery"
+title: "Examples"
 site: distill::distill_website
+listing: examples
 ---
-
-Welcome!! 

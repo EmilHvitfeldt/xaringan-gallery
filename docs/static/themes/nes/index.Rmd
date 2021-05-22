@@ -1,0 +1,107 @@
+---
+title: "NES xaringan theme <i class='nes-icon coin'></i>"
+subtitle: "Inspired by NES.css"
+author: "Emil Hvitfeldt"
+output:
+  xaringan::moon_reader:
+    css: ["style.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+Normal text
+
+**Bold text**
+
+*italics*
+
+~~strikethrough~~
+
+[links](https://www.xaringan.gallery/).
+
+---
+
+# Code expressions
+
+Code chunks and output
+
+```{r}
+lm(mpg ~ disp, data = mtcars)
+```
+
+---
+
+# Block quotes
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+---
+
+# Ordered list
+
+1. First item
+2. Second item
+3. Third item
+    1. Indented item
+    2. Indented item
+4. Fourth item
+
+---
+
+# Unordered list
+
+- First item
+- Second item
+- Third item
+- Fourth item
+
+---
+
+# ggplot2
+
+```{r scatter, fig.show='hide', warning=FALSE}
+library(ggplot2)
+library(palmerpenguins)
+
+colors <- c("#76c442", "#f2c409", "#ce372b")
+
+ggplot(penguins) +
+  aes(bill_length_mm, bill_depth_mm,
+      color = species) +
+  geom_point() +
+  theme_minimal(base_family = "Press Start 2P") +
+  scale_color_manual(values = colors) -> ppp
+```
+
+Must have installed [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) font
+
+---
+
+class: center
+
+# ggplot2
+
+```{r, echo=FALSE, fig.asp=0.618, warning=FALSE, dev='svg'}
+ppp
+```
+
+---
+
+class: center
+
+# Thank you!
+
+<i class="nes-icon twitter"></i> @Emil_Hvitfeldt
+
+<i class="nes-icon github"></i> EmilHvitfeldt
+
+<i class="nes-icon linkedin"></i> EmilHvitfeldt

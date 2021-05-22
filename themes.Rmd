@@ -1,6 +1,5 @@
 ---
-title: "xaringan Gallery"
+title: "Themes"
 site: distill::distill_website
+listing: themes
 ---
-
-Welcome!! 

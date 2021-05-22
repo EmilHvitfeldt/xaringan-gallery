@@ -7,6 +7,10 @@ theme: theme.css
 base_url: https://emilhvitfeldt.github.io/xaringan-gallery/
 navbar:
   right:
+    - text: "Themes"
+      href: themes.html
+    - text: "Examples"
+      href: examples.html
     - text: "Home"
       href: index.html
 output: distill::distill_article

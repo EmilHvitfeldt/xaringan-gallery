@@ -1,0 +1,42 @@
+---
+output:
+  xaringan::moon_reader:
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+.pull-left[
+.pull-left[
+# Nested pulls
+- x = mpg,
+- y = disp,
+- color = vs
+]
+
+.pull-right[
+```{r scatter, dev='png', fig.show='hide', message=FALSE}
+library(tidyverse)
+mtcars %>%
+  ggplot() +
+  aes(
+    x = mpg,
+    y = disp,
+    color = vs
+  ) +
+  geom_point()
+```
+]
+]
+
+.pull-right[
+```{r, echo=FALSE}
+knitr::include_graphics(
+  knitr::fig_chunk("scatter", "png")
+)
+```
+]

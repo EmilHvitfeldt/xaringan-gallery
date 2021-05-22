@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Xaringan Gallery</title>
+    <link>https://emilhvitfeldt.github.io/xaringan-gallery/</link>
+    <atom:link href="https://emilhvitfeldt.github.io/xaringan-gallery/themes.xml" rel="self" type="application/rss+xml"/>
+    <description>Xaringan Gallery
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Fri, 21 May 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>NES.css</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/themes/2021-05-21-nes-theme</link>
+      <description>Themes inspired by NES.css</description>
+      <category>theme</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/themes/2021-05-21-nes-theme</guid>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/themes/2021-05-21-nes-theme/preview.gif" medium="image" type="image/gif"/>
+    </item>
+  </channel>
+</rss>

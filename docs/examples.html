@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://emilhvitfeldt.github.io/xaringan-gallery/examples.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -85,26 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Xaringan Gallery: xaringan Gallery</title>
+  <title>Xaringan Gallery: Examples</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Xaringan Gallery: xaringan Gallery"/>
+  <meta property="og:title" content="Xaringan Gallery: Examples"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Xaringan Gallery"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Xaringan Gallery: xaringan Gallery"/>
+  <meta property="twitter:title" content="Xaringan Gallery: Examples"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site"]}},"value":[{"type":"character","attributes":{},"value":["xaringan Gallery"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Examples"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["examples"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2374,12 +2375,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"xaringan Gallery","authors":[]}
+{"title":"Examples","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2401,9 +2402,393 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Examples">Examples</h1>
+<a href="examples/2021-05-21-nested-pulls/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["pull","content classes"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 21, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="examples/2021-05-21-nested-pulls/preview.png"/>
+</div>
+<div class="description">
+<h2>Nested Pulls</h2>
+<div class="dt-tags">
+<div class="dt-tag">pull</div>
+<div class="dt-tag">content classes</div>
+</div>
+<p>The layout property can be used to create layout slides</p>
+</div>
+</a>
+<a href="examples/2021-05-20-adjustable-pull/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["css","content classes","pull"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 20, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="examples/2021-05-20-adjustable-pull/preview.png"/>
+</div>
+<div class="description">
+<h2>Adjustable Pull</h2>
+<div class="dt-tags">
+<div class="dt-tag">css</div>
+<div class="dt-tag">content classes</div>
+<div class="dt-tag">pull</div>
+</div>
+<p>Adjust the widths of .pull-left and .pull-right</p>
+</div>
+</a>
+<a href="examples/2021-05-20-chaining-content-classes/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["css","content classes"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 20, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="examples/2021-05-20-chaining-content-classes/preview.png"/>
+</div>
+<div class="description">
+<h2>Chaining Content Classes</h2>
+<div class="dt-tags">
+<div class="dt-tag">css</div>
+<div class="dt-tag">content classes</div>
+</div>
+<p>Syntax trick for cleaner use of content classes</p>
+</div>
+</a>
+<a href="examples/2021-05-20-content-classes/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["css","content classes"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 20, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="examples/2021-05-20-content-classes/preview.png"/>
+</div>
+<div class="description">
+<h2>Content Classes</h2>
+<div class="dt-tags">
+<div class="dt-tag">css</div>
+<div class="dt-tag">content classes</div>
+</div>
+<p>Use css to create content classes to style elements</p>
+</div>
+</a>
+<a href="examples/2021-05-11-typed/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["typed.js"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 11, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt Hansen</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="examples/2021-05-11-typed/preview.png"/>
+</div>
+<div class="description">
+<h2>typed</h2>
+<div class="dt-tags">
+<div class="dt-tag">typed.js</div>
+</div>
+<p>A short description of the post.</p>
+</div>
+</a>
+<a href="examples/2021-05-09-fancy-first-letter/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["css"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 9, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="examples/2021-05-09-fancy-first-letter/preview.png"/>
+</div>
+<div class="description">
+<h2>fancy first letter</h2>
+<div class="dt-tags">
+<div class="dt-tag">css</div>
+</div>
+<p>Big first letters</p>
+</div>
+</a>
+<a href="examples/2021-05-09-particle-images/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["particles.js"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 9, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="examples/2021-05-09-particle-images/preview.png"/>
+</div>
+<div class="description">
+<h2>particles images</h2>
+<div class="dt-tags">
+<div class="dt-tag">particles.js</div>
+</div>
+<p>Floating hex stickers</p>
+</div>
+</a>
+<a href="examples/2021-05-09-ventajs-birds/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["vanta.js"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 9, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="examples/2021-05-09-ventajs-birds/preview.png"/>
+</div>
+<div class="description">
+<h2>venta.js birds</h2>
+<div class="dt-tags">
+<div class="dt-tag">vanta.js</div>
+</div>
+<p>A short description of the post.</p>
+</div>
+</a>
+<a href="examples/2021-05-08-layout-example/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["remark properties","layout"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 8, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="examples/2021-05-08-layout-example/preview.png"/>
+</div>
+<div class="description">
+<h2>layout property</h2>
+<div class="dt-tags">
+<div class="dt-tag">remark properties</div>
+<div class="dt-tag">layout</div>
+</div>
+<p>The layout property can be used to create layout slides</p>
+</div>
+</a>
+<a href="examples/2021-05-09-shiki/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["syntax highlighting"]}</script>
+<div class="metadata">
+<div class="publishedDate">May 8, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Emil Hvitfeldt</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="examples/2021-05-09-shiki/preview.png"/>
+</div>
+<div class="description">
+<h2>shiki syntax highlighting</h2>
+<div class="dt-tags">
+<div class="dt-tag">syntax highlighting</div>
+</div>
+<p>Beautiful syntax highlighting with shiki</p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#category:articles">articles</a>
+<span class="category-count">(10)</span>
+</li>
+<li>
+<a href="#category:content_classes">content classes</a>
+<span class="category-count">(4)</span>
+</li>
+<li>
+<a href="#category:css">css</a>
+<span class="category-count">(4)</span>
+</li>
+<li>
+<a href="#category:layout">layout</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:particles.js">particles.js</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:pull">pull</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:remark_properties">remark properties</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:syntax_highlighting">syntax highlighting</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:typed.js">typed.js</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:vanta.js">vanta.js</a>
+<span class="category-count">(1)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>xaringan Gallery</h1>
+<h1>Examples</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2411,7 +2796,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>Welcome!!</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

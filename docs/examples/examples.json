@@ -1,0 +1,218 @@
+[
+  {
+    "path": "examples/2021-05-21-nested-pulls/",
+    "title": "Nested Pulls",
+    "description": "The layout property can be used to create layout slides",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-21",
+    "categories": [
+      "pull",
+      "content classes"
+    ],
+    "contents": "\nThe .pull-left[] and .pull-right[] content classes are great in their own right to put material side by side.\nYou can put a pair of .pull-left[] and .pull-right[] inside one of these to further subdivide the slide.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    seal: false\n    lib_dir: libs\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n      ratio: \"16:9\"\n---\n\n.pull-left[\n.pull-left[\n# Nested pulls\n- x = mpg,\n- y = disp,\n- color = vs\n]\n\n.pull-right[\n```{r scatter, dev='png', fig.show='hide', message=FALSE}\nlibrary(tidyverse)\nmtcars %>%\n  ggplot() +\n  aes(\n    x = mpg,\n    y = disp,\n    color = vs\n  ) +\n  geom_point()\n```\n]\n]\n\n.pull-right[\n```{r, echo=FALSE}\nknitr::include_graphics(\n  knitr::fig_chunk(\"scatter\", \"png\")\n)\n```\n]\n\n\n\n\n",
+    "preview": "examples/2021-05-21-nested-pulls/preview.png",
+    "last_modified": "2021-05-21T22:37:38-07:00",
+    "input_file": {},
+    "preview_width": 3160,
+    "preview_height": 1666
+  },
+  {
+    "path": "examples/2021-05-20-adjustable-pull/",
+    "title": "Adjustable Pull",
+    "description": "Adjust the widths of .pull-left and .pull-right",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-20",
+    "categories": [
+      "css",
+      "content classes",
+      "pull"
+    ],
+    "contents": "\nContent classes such as .pull-left and .pull-right are very useful to organize material in your slides. They come with a default width that you would change, but it isn’t really worth it to do it globally in your slides.\nWith the use of changed content classes, you can specify the width of .pull-left and .pull-right on a case-by-case basis. The \"widths.css\" file contains content classes for different widths using the names w* where * is a percentage. Typing .pull-left.w40 would create a column on the left with a width of 40%. The order doesn’t matter so `.w40.pull-left would work as well.\nNote that \"widths.css\" must be placed after \"default\" in xaringan::moon_reader: css.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"widths.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample Header\n\n.pull-left.w30[\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n]\n\n.w65.pull-right[\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n]\n\nwidth.css\n\n.w00 {width: 00%;}\n.w01 {width: 01%;}\n.w02 {width: 02%;}\n.w03 {width: 03%;}\n.w04 {width: 04%;}\n.w05 {width: 05%;}\n.w06 {width: 06%;}\n.w07 {width: 07%;}\n.w08 {width: 08%;}\n.w09 {width: 09%;}\n.w10 {width: 10%;}\n.w11 {width: 11%;}\n.w12 {width: 12%;}\n.w13 {width: 13%;}\n.w14 {width: 14%;}\n.w15 {width: 15%;}\n.w16 {width: 16%;}\n.w17 {width: 17%;}\n.w18 {width: 18%;}\n.w19 {width: 19%;}\n.w20 {width: 20%;}\n.w21 {width: 21%;}\n.w22 {width: 22%;}\n.w23 {width: 23%;}\n.w24 {width: 24%;}\n.w25 {width: 25%;}\n.w26 {width: 26%;}\n.w27 {width: 27%;}\n.w28 {width: 28%;}\n.w29 {width: 29%;}\n.w30 {width: 30%;}\n.w31 {width: 31%;}\n.w32 {width: 32%;}\n.w33 {width: 33%;}\n.w34 {width: 34%;}\n.w35 {width: 35%;}\n.w36 {width: 36%;}\n.w37 {width: 37%;}\n.w38 {width: 38%;}\n.w39 {width: 39%;}\n.w40 {width: 40%;}\n.w41 {width: 41%;}\n.w42 {width: 42%;}\n.w43 {width: 43%;}\n.w44 {width: 44%;}\n.w45 {width: 45%;}\n.w46 {width: 46%;}\n.w47 {width: 47%;}\n.w48 {width: 48%;}\n.w49 {width: 49%;}\n.w50 {width: 50%;}\n.w51 {width: 51%;}\n.w52 {width: 52%;}\n.w53 {width: 53%;}\n.w54 {width: 54%;}\n.w55 {width: 55%;}\n.w56 {width: 56%;}\n.w57 {width: 57%;}\n.w58 {width: 58%;}\n.w59 {width: 59%;}\n.w60 {width: 60%;}\n.w61 {width: 61%;}\n.w62 {width: 62%;}\n.w63 {width: 63%;}\n.w64 {width: 64%;}\n.w65 {width: 65%;}\n.w66 {width: 66%;}\n.w67 {width: 67%;}\n.w68 {width: 68%;}\n.w69 {width: 69%;}\n.w70 {width: 70%;}\n.w71 {width: 71%;}\n.w72 {width: 72%;}\n.w73 {width: 73%;}\n.w74 {width: 74%;}\n.w75 {width: 75%;}\n.w76 {width: 76%;}\n.w77 {width: 77%;}\n.w78 {width: 78%;}\n.w79 {width: 79%;}\n.w80 {width: 80%;}\n.w81 {width: 81%;}\n.w82 {width: 82%;}\n.w83 {width: 83%;}\n.w84 {width: 84%;}\n.w85 {width: 85%;}\n.w86 {width: 86%;}\n.w87 {width: 87%;}\n.w88 {width: 88%;}\n.w89 {width: 89%;}\n.w90 {width: 90%;}\n.w91 {width: 91%;}\n.w92 {width: 92%;}\n.w93 {width: 93%;}\n.w94 {width: 94%;}\n.w95 {width: 95%;}\n.w96 {width: 96%;}\n.w97 {width: 97%;}\n.w98 {width: 98%;}\n.w99 {width: 99%;}\n\n\n\n\n",
+    "preview": "examples/2021-05-20-adjustable-pull/preview.png",
+    "last_modified": "2021-05-21T22:36:05-07:00",
+    "input_file": {},
+    "preview_width": 2242,
+    "preview_height": 1518
+  },
+  {
+    "path": "examples/2021-05-20-chaining-content-classes/",
+    "title": "Chaining Content Classes",
+    "description": "Syntax trick for cleaner use of content classes",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-20",
+    "categories": [
+      "css",
+      "content classes"
+    ],
+    "contents": "\nContent classes are a great tool when creating xaringan slides. Chaining is a way to apply multiple content classes to the same element with a more concise syntax.\nIf you were to apply .italic and .orange to a word you could write it as .italic[.orange[word]] which is already bad with just 2 classes. Chaining allows us to write .italic.orange[word] to get the same result.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"stylesheet.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample .italic.orange[Header]\n\n# Sample .orange.italic[Header]\n\n# Sample .italic[.orange[Header]]\n\nstylesheet.css\n\n.italic {\n  font-style: italic;\n}\n\n.orange {\n  color: orange;\n}\n\n\n\n\n",
+    "preview": "examples/2021-05-20-chaining-content-classes/preview.png",
+    "last_modified": "2021-05-20T19:41:06-07:00",
+    "input_file": {},
+    "preview_width": 1414,
+    "preview_height": 864
+  },
+  {
+    "path": "examples/2021-05-20-content-classes/",
+    "title": "Content Classes",
+    "description": "Use css to create content classes to style elements",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-20",
+    "categories": [
+      "css",
+      "content classes"
+    ],
+    "contents": "\nCustom content classes are a great way to quick style elements of your slides. Create a css class, here is a class called .orange which sets the color to orange.\n\n\n.orange {\n  color: orange;\n}\n\nIf you write .orange[some text] then it will be rendered as some text in the final document.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"stylesheet.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample .orange[Header]\n\n.bold[Duis vel viverra elit, eget hendrerit odio.] \nCurabitur cursus elit nec diam vulputate, nec \nsollicitudin nunc ornare. Ut mi lectus, aliquet \nnon ligula sed, lobortis vehicula erat. Morbi \nporttitor orci ut semper dapibus. Donec sodales \ntellus varius tortor varius, ornare commodo augue \nmaximus. Vestibulum quisbibendum mi, sit amet \nlobortis leo. Morbi vulputate orci arcu, ac lobortis\nsapien gravida eget. Nulla noninterdum orci, nec \ncongue ligula.\n\nstylesheet.css\n\n.bold {\n  font-weight: bold;\n}\n\n.orange {\n  color: orange;\n}\n\n\n\n\n",
+    "preview": "examples/2021-05-20-content-classes/preview.png",
+    "last_modified": "2021-05-20T19:20:30-07:00",
+    "input_file": {},
+    "preview_width": 1030,
+    "preview_height": 570
+  },
+  {
+    "path": "examples/2021-05-11-typed/",
+    "title": "typed",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt Hansen",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-11",
+    "categories": [
+      "typed.js"
+    ],
+    "contents": "\nAnimated self-typing can be a fun addition to your slides.\nThese examples use the Typed.js javascript library to animate the text. The repository includes a handful of good examples and a list of parameters.\nNotes:\nI found that you must use all the typed objects you create for them to work in xaringan. E.i. If you want to used .typed2[] you must have called .typed[] as well. Furthermore, you can only use each typed object once.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    includes:\n      after_body: \"typed.js\"\n    lib_dir: libs\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# .typed[]\n\nLorem ipsum\n\n---\n\n.center[\n# Thank you!\n\n.typed2[]\n]\n\n```{r include=FALSE, echo=FALSE}\nicon::fa()\n```\n\ntyped.js\n\n<script src=\"https://cdn.jsdelivr.net/npm/typed.js@2.0.11\"><\/script>\n\n<script>\nconst typed = new Typed('.typed', {\n  strings: [\n    'Self typing text',\n    'Only using <b>typed.js<\/b>'\n  ],\n  typeSpeed: 60,\n  backSpeed: 20,\n  cursorChar: '',\n  loop: true\n});\n\nconst typed2 = new Typed('.typed2', {\n  strings: [\n  \"<i class='fab fa-github'/> Github_handle\",\n  \"<i class='fab fa-twitter'/> Twitter_handle\",\n  \"<i class='fab fa-linkedin'/> Linkedin_handle\",\n  \"<i class='fas fa-laptop'/> my-website.com\",\n  ],\n  typeSpeed: 50,\n  backDelay: 2000,\n  contentType: 'html',\n  loop: true\n});\n<\/script>\n\n\n\n\n",
+    "preview": "examples/2021-05-11-typed/preview.png",
+    "last_modified": "2021-05-20T14:35:21-07:00",
+    "input_file": {},
+    "preview_width": 866,
+    "preview_height": 368
+  },
+  {
+    "path": "examples/2021-05-09-fancy-first-letter/",
+    "title": "fancy first letter",
+    "description": "Big first letters",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-09",
+    "categories": [
+      "css"
+    ],
+    "contents": "\nDrop caps are a fun way to add a little bit of flair to a paragraph.\nUsing the ::first-letter pseudo-element we can specifying the style of that is applied to the first letter of a paragraph.\nYou can go above and beyond and specify a custom font to be used in the drop-cap. The romantik font was used in this example.\nAll files found here.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"stylesheet.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample Header\n\n.drop-cap[\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n]\n\nstylesheet.css\n\n@font-face {\n    font-family: 'Romantik';\n    src: url('Romantik.woff2') format('woff2'),\n         url('Romantik.woff') format('woff');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n}\n\n.drop-cap::first-letter {\n    font-family: 'Romantik';\n    float: left;\n    font-size: 65px;\n    line-height: 70px;\n    padding-top: 10px;\n    padding-right: 8px;\n    padding-left: 3px;\n    margin-bottom: -15px;\n}\n\n\n\n\n",
+    "preview": "examples/2021-05-09-fancy-first-letter/preview.png",
+    "last_modified": "2021-05-20T16:05:56-07:00",
+    "input_file": {},
+    "preview_width": 720,
+    "preview_height": 448
+  },
+  {
+    "path": "examples/2021-05-09-particle-images/",
+    "title": "particles images",
+    "description": "Floating hex stickers",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-09",
+    "categories": [
+      "particles.js"
+    ],
+    "contents": "\nThe particles.js is a fun library for creating organic particle effects. This example shows how a modified particles.js script allows you to create floating hex stickers.\nAll the magic is happening in a .html file where all the effects are created then inserted into the xaringan slides using iframes.\nPlease note that you are not allowed to advance slides if you click on this iframe, and you need to click on the slide number (lower right) to be able to advance. (If you know how to fix this, please file an issue)\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    lib_dir: libs\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nclass: no-padding\n\n```{css, echo=FALSE}\n.no-padding {\n  padding: 0;\n}\n```\n\n<iframe src=\"particles/particles.html\" \nwidth=\"100%\" height=\"100%\" frameBorder=\"0\">\n<\/iframe>\n\n---\n\n# xaringan\n\nRest of files\nhere\n\n\n\n",
+    "preview": "examples/2021-05-09-particle-images/preview.png",
+    "last_modified": "2021-05-20T14:35:43-07:00",
+    "input_file": {},
+    "preview_width": 2330,
+    "preview_height": 1562
+  },
+  {
+    "path": "examples/2021-05-09-ventajs-birds/",
+    "title": "venta.js birds",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-09",
+    "categories": [
+      "vanta.js"
+    ],
+    "contents": "\nThe Vanta.js provides beautiful animated Javascript backgrounds.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n      beforeInit: [\"https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js\", \n                   \"https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js\"]\n---\n\nclass: no-padding\n\n```{css, echo=FALSE}\n.no-padding {\n  padding: 0;\n}\n\n#vantajs {\n  width: 100%; \n  height: 100%;\n}\n```\n\n<div id=\"vantajs\"><\/div>\n\n<script>\nVANTA.BIRDS({\n  el: \"#vantajs\",\n  backgroundColor: 0x76a3f5,\n  /* more options (Uncomment) */\n  //birdSize: 1.50,\n  //wingSpan: 21.00,\n  //speedLimit: 4.00,\n  //separation: 32.00,\n  //alignment: 33.00,\n  //cohesion: 33.00,\n  quantity: 4.00\n});\n<\/script>\n\n---\n\n# Next Slide\n\n\n\n\n",
+    "preview": "examples/2021-05-09-ventajs-birds/preview.png",
+    "last_modified": "2021-05-20T14:35:30-07:00",
+    "input_file": {},
+    "preview_width": 2308,
+    "preview_height": 1558
+  },
+  {
+    "path": "examples/2021-05-08-layout-example/",
+    "title": "layout property",
+    "description": "The layout property can be used to create layout slides",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-08",
+    "categories": [
+      "remark properties",
+      "layout"
+    ],
+    "contents": "\nThe layout property comes from the remark library. It setting layout: true makes the current slide a layout slide, which is omitted from the slideshow and serves as the default template used for all subsequent slides.\nSetting layout: false reverts to using no default template.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    seal: false\n    lib_dir: libs\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\nlayout: true\n\n# Header Section\n\n---\n\n## Sub section 1\n\nThe header with `layout: true` will be keep, \nbut whats on this slide is addded on\n\n---\n\n## Sub section 2\n\nAnd this continues forever. And must be turned \noff with `layout: false`\n\n---\n\nlayout: false\n\nNow we repeat\n\n---\n\n1\n\n---\n\n2\n\n\n\n\n",
+    "preview": "examples/2021-05-08-layout-example/preview.png",
+    "last_modified": "2021-05-20T14:36:07-07:00",
+    "input_file": {},
+    "preview_width": 1148,
+    "preview_height": 682
+  },
+  {
+    "path": "examples/2021-05-09-shiki/",
+    "title": "shiki syntax highlighting",
+    "description": "Beautiful syntax highlighting with shiki",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-08",
+    "categories": [
+      "syntax highlighting"
+    ],
+    "contents": "\nThe shiki Javascript library provides beautiful syntax highlighting.\nTo use this highlighter, specify beforeInit: [\"https://unpkg.com/shiki\", \"shiki-addon.js\"] in nature and include shiki-addon.js at same folder as your rmd file.\nThe theme can be changed in shiki-addon.js with avaliable themes are listed here.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\ntitle: \"Presentation Ninja\"\nsubtitle: \"⚔<br/>with xaringan\"\nauthor: \"Yihui Xie\"\ninstitute: \"RStudio, PBC\"\ndate: \"2016/12/12 (updated: `r Sys.Date()`)\"\noutput:\n  xaringan::moon_reader:\n    lib_dir: libs\n    seal: false\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n      beforeInit: [\"https://unpkg.com/shiki\", \n                   \"shiki-addon.js\"]\n---\n\n# Title\n\n```{r, eval=FALSE}\ninstall.packages(\"tidyverse\")\n# Alternatively, install just ggplot2:\ninstall.packages(\"ggplot2\")\n\n# Or the development version from GitHub:\n# install.packages(\"devtools\")\ndevtools::install_github(\"tidyverse/ggplot2\")\n\nNA_real_\n```\n\n---\n\n# Language aware\n\n```{js,  eval=FALSE}\nvar element = document.getElementById(\"myCode\");\nShiki.highlight(element);\n```\n\nshiki-addon.js\n\nremark.highlighter.engine.highlightBlock = (block, temp) => {\n   shiki_wrapper(block)\n};\n\nfunction shiki_wrapper (block) {\n    shiki\n      .getHighlighter({\n        theme: 'github-light'\n      })\n      .then(highlighter => {\n\n        // Add spaces to empty lines to avoid them being removed\n        const search = '<div class=\"remark-code-line\"><\/div>';\n        const replaceWith = '<div class=\"remark-code-line\"> <\/div>';\n        block.innerHTML = block.innerHTML.split(search).join(replaceWith);\n\n        codeLanguage = block.className.replace(\" remark-code\",\"\")\n        block.innerHTML = highlighter.codeToHtml(block.innerText, codeLanguage)\n      });\n};\n\n\n\n\n",
+    "preview": "examples/2021-05-09-shiki/preview.png",
+    "last_modified": "2021-05-20T14:28:08-07:00",
+    "input_file": {},
+    "preview_width": 2170,
+    "preview_height": 1560
+  }
+]
