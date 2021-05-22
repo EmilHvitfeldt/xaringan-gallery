@@ -55,6 +55,18 @@
       <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-no-slide-number/preview.png" medium="image" type="image/png" width="2322" height="1712"/>
     </item>
     <item>
+      <title>Omit Slide Number</title>
+      <dc:creator>Emil Hvitfeldt</dc:creator>
+      <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-omit-slide-number</link>
+      <description>Selectively omit slide numbers</description>
+      <category>css</category>
+      <category>slide number</category>
+      <category>content classes</category>
+      <guid>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-omit-slide-number</guid>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-omit-slide-number/preview.png" medium="image" type="image/png" width="2322" height="1712"/>
+    </item>
+    <item>
       <title>Transparent Backgrounds for Plot</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
       <link>https://emilhvitfeldt.github.io/xaringan-gallery/examples/2021-05-22-transparent-plot</link>

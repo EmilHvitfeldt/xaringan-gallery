@@ -1,0 +1,23 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "style.css"]
+    lib_dir: libs
+    seal: FALSE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Sample Header
+
+---
+
+class: hide-count
+
+# No slide number here
+
+---
+
+# Still counting

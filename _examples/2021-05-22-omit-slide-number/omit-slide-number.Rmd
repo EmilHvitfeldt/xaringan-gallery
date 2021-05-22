@@ -1,0 +1,46 @@
+---
+title: "Omit Slide Number"
+description: |
+  Selectively omit slide numbers
+author:
+  - name: Emil Hvitfeldt
+    url: {}
+date: 05-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - css
+  - slide number
+  - content classes
+preview: preview.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Sometimes you want to remove slide numbers selectively. This can be handled with a content class.
+
+[Trick](https://twitter.com/grrrck/status/1301911393176825856) by [Garrick Aden-Buie](https://twitter.com/grrrck)
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/no-slide-number/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/no-slide-number/index.Rmd"), sep = "\n")
+```
+
+# style.css
+
+```{r, echo=FALSE, class.output = "css"}
+cat(readr::read_lines("../../static/examples/no-slide-number/style.css"), sep = "\n")
+```

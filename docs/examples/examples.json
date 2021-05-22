@@ -90,6 +90,29 @@
     "preview_height": 1712
   },
   {
+    "path": "examples/2021-05-22-omit-slide-number/",
+    "title": "Omit Slide Number",
+    "description": "Selectively omit slide numbers",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [
+      "css",
+      "slide number",
+      "content classes"
+    ],
+    "contents": "\nSometimes you want to remove slide numbers selectively. This can be handled with a content class.\nTrick by Garrick Aden-Buie\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"style.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n# Sample Header\n\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n\nstyle.css\n\n.remark-slide-number {\n  display: none;\n}\n\n\n\n\n",
+    "preview": "examples/2021-05-22-omit-slide-number/preview.png",
+    "last_modified": "2021-05-22T14:09:46-07:00",
+    "input_file": {},
+    "preview_width": 2322,
+    "preview_height": 1712
+  },
+  {
     "path": "examples/2021-05-22-transparent-plot/",
     "title": "Transparent Backgrounds for Plot",
     "description": "Remove background of plots",
