@@ -69,6 +69,27 @@
     "preview_height": 958
   },
   {
+    "path": "examples/2021-05-22-hex-header/",
+    "title": "Hex Header",
+    "description": "Add row of hexes to header of slide",
+    "author": [
+      {
+        "name": "Emil Hvitfeldt",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [
+      "css"
+    ],
+    "contents": "\nA row of hex stickers at the top of a slide is a great way to indicate to the viewer what packages are being used when.\nWe can accomplish this using a custom function hexes and a css class.\nSimply put the required hex stickers in the images/ folder. (code assumes that all hexes are .png files) and add this to the end of a header to include the hexes.\n\n\n`r hexes(\"xaringan\")`\n\n\n\nTrick by Max Kuhn\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nRmd\n\n---\noutput:\n  xaringan::moon_reader:\n    css: [\"default\", \"style.css\"]\n    lib_dir: libs\n    seal: FALSE\n    nature:\n      highlightStyle: github\n      highlightLines: true\n      countIncrementalSlides: false\n---\n\n```{r setup, echo=FALSE}\nhexes <- function(x) {\n  x <- paste0(x, \".png\")\n  markup <- function(pkg) {\n    glue::glue('<img src=\"images/{pkg}\" class=\"title-hex\">')\n  }\n  res <- purrr::map_chr(x, markup)\n  I(paste0(res, collapse = \"\"))\n}\n```\n\n# One hex `r hexes(\"xaringan\")`\n\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n\n---\n\n# Two hexes `r hexes(c(\"xaringan\", \"xaringanthemer\"))`\n\nDuis vel viverra elit, eget hendrerit odio. Curabitur \ncursus elit nec diam vulputate, nec sollicitudin nunc \nornare. Ut mi lectus, aliquet non ligula sed, \nlobortis vehicula erat. Morbi porttitor orci ut \nsemper dapibus. Donec sodales tellus varius tortor \nvarius, ornare commodo augue maximus. Vestibulum quis\nbibendum mi, sit amet lobortis leo. Morbi vulputate \norci arcu, ac lobortis sapien gravida eget. Nulla non\ninterdum orci, nec congue ligula.\n\nstyle.css\n\n.title-hex{\n  height: 50px;\n  align: middle;\n  float: right;\n}\n\n\n\n\n",
+    "preview": "examples/2021-05-22-hex-header/preview.png",
+    "last_modified": "2021-05-22T16:43:10-07:00",
+    "input_file": {},
+    "preview_width": 2098,
+    "preview_height": 1146
+  },
+  {
     "path": "examples/2021-05-22-no-padding-slide/",
     "title": "No Padding Slide",
     "description": "Create slides that contain no padding",

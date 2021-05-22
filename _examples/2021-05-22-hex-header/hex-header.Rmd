@@ -1,0 +1,48 @@
+---
+title: "Hex Header"
+description: |
+  Add row of hexes to header of slide
+author:
+  - name: Emil Hvitfeldt
+    url: {}
+date: 05-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - css
+preview: preview.png
+---
+
+A row of hex stickers at the top of a slide is a great way to indicate to the viewer what packages are being used when.
+
+We can accomplish this using a custom function `hexes` and a css class.
+
+Simply put the required hex stickers in the `images/` folder. (code assumes that all hexes are .png files) and add this to the end of a header to include the hexes.
+
+```{r, eval=FALSE}
+`r hexes("xaringan")`
+```
+
+Trick by [Max Kuhn](https://twitter.com/topepos)
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/examples/hex-header/index.html", 
+  ratio = "4:3"
+)
+```
+
+# Rmd
+
+```{r, echo=FALSE, class.output = "rmd"}
+cat(readr::read_lines("../../static/examples/hex-header/index.Rmd"), sep = "\n")
+```
+
+# style.css
+
+```{r, echo=FALSE, class.output = "css"}
+cat(readr::read_lines("../../static/examples/hex-header/style.css"), sep = "\n")
+```
