@@ -42,6 +42,6 @@ cat(readr::read_lines("../../static/examples/typed/index.Rmd"), sep = "\n")
 
 # typed.js
 
-```{r, echo=FALSE, class.output = "css"}
+```{r, echo=FALSE, class.output = "cssfile"}
 cat(readr::read_lines("../../static/examples/typed/typed.js"), sep = "\n")
 ```

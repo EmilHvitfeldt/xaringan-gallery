@@ -41,6 +41,6 @@ cat(readr::read_lines("../../static/examples/chaining-content-classes/index.Rmd"
 
 # stylesheet.css
 
-```{r, echo=FALSE, class.output = "css"}
+```{r, echo=FALSE, class.output = "cssfile"}
 cat(readr::read_lines("../../static/examples/chaining-content-classes/stylesheet.css"), sep = "\n")
 ```

@@ -40,6 +40,6 @@ cat(readr::read_lines("../../static/examples/shiki/index.Rmd"), sep = "\n")
 
 # shiki-addon.js
 
-```{r, echo=FALSE, class.output = "js"}
+```{r, echo=FALSE, class.output = "jsfile"}
 cat(readr::read_lines("../../static/examples/shiki/shiki-addon.js"), sep = "\n")
 ```

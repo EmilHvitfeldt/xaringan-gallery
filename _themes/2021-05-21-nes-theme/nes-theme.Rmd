@@ -37,7 +37,7 @@ cat(readr::read_lines("../../static/themes/nes/index.Rmd"), sep = "\n")
 
 # css
 
-```{r, echo=FALSE, class.output = "css"}
+```{r, echo=FALSE, class.output = "cssfile"}
 cat(readr::read_lines("../../static/themes/nes/style.css"), sep = "\n")
 ```
 

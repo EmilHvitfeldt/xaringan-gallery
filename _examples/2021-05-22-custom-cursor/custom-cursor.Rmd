@@ -41,6 +41,6 @@ cat(readr::read_lines("../../static/examples/custom-cursor/index.Rmd"), sep = "\
 
 # style.css
 
-```{r, echo=FALSE, class.output = "css"}
+```{r, echo=FALSE, class.output = "cssfile"}
 cat(readr::read_lines("../../static/examples/custom-cursor/style.css"), sep = "\n")
 ```

@@ -43,6 +43,6 @@ cat(readr::read_lines("../../static/examples/adjustable-pull/index.Rmd"), sep = 
 
 # width.css
 
-```{r, echo=FALSE, class.output = "css"}
+```{r, echo=FALSE, class.output = "cssfile"}
 cat(readr::read_lines("../../static/examples/adjustable-pull/widths.css"), sep = "\n")
 ```

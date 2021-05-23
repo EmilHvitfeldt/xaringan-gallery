@@ -43,6 +43,6 @@ cat(readr::read_lines("../../static/examples/hex-header/index.Rmd"), sep = "\n")
 
 # style.css
 
-```{r, echo=FALSE, class.output = "css"}
+```{r, echo=FALSE, class.output = "cssfile"}
 cat(readr::read_lines("../../static/examples/hex-header/style.css"), sep = "\n")
 ```

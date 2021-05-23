@@ -38,6 +38,6 @@ cat(readr::read_lines("../../static/examples/no-padding-slide/index.Rmd"), sep =
 
 # style.css
 
-```{r, echo=FALSE, class.output = "css"}
+```{r, echo=FALSE, class.output = "cssfile"}
 cat(readr::read_lines("../../static/examples/no-padding-slide/style.css"), sep = "\n")
 ```
