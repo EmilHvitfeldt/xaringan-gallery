@@ -3,6 +3,7 @@ title: "Xaringan Gallery"
 description: |
   Xaringan Gallery
 output_dir: "docs"
+creative_commons: CC BY
 theme: theme.css
 base_url: https://xaringan.gallery
 navbar:
