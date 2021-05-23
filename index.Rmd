@@ -1,6 +1,8 @@
 ---
-title: "xaringan Gallery"
+title: "Welcome!"
 site: distill::distill_website
 ---
 
-Welcome!! 
+Welcome to [xaringan](https://github.com/yihui/xaringan) gallery, a growing collection of [examples](examples.html) and custom [themes](themes.html).
+
+Feel free to suggest an example or custom theme you have been working on; any feedback is highly welcome. [Github](https://github.com/EmilHvitfeldt/xaringan-gallery/issues) is the best place to go for feedback.
