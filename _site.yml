@@ -6,7 +6,11 @@ output_dir: "docs"
 creative_commons: CC BY
 theme: theme.css
 base_url: https://xaringan.gallery
+favicon: images/favicon.ico
 navbar:
+  logo:
+    image: images/logo.png
+    href: https://xaringan.gallery/
   right:
     - text: "Themes"
       href: themes.html
