@@ -5,21 +5,21 @@
       "title": "Examples",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-22T18:05:34-07:00"
+      "last_modified": "2021-06-01T14:25:12-07:00"
     },
     {
       "path": "index.html",
       "title": "Welcome!",
       "author": [],
       "contents": "\nWelcome to xaringan gallery, a growing collection of examples and custom themes.\nFeel free to suggest an example or custom theme you have been working on; any feedback is highly welcome. Github is the best place to go for feedback.\n\n\n\n",
-      "last_modified": "2021-05-22T18:05:34-07:00"
+      "last_modified": "2021-06-01T14:25:13-07:00"
     },
     {
       "path": "themes.html",
       "title": "Themes",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-22T18:05:35-07:00"
+      "last_modified": "2021-06-01T14:25:13-07:00"
     }
   ],
   "collections": ["examples/examples.json", "themes/themes.json"]

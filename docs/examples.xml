@@ -16,219 +16,219 @@
     <item>
       <title>Custom Cursor</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-custom-cursor</link>
+      <link>https://xaringan.gallery/examples/custom-cursor</link>
       <description>Add a custom cursor</description>
       <category>css</category>
       <category>content classes</category>
       <category>cursor</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-custom-cursor</guid>
+      <guid>https://xaringan.gallery/examples/custom-cursor</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-custom-cursor/preview.png" medium="image" type="image/png" width="812" height="516"/>
+      <media:content url="https://xaringan.gallery/examples/custom-cursor/preview.png" medium="image" type="image/png" width="812" height="516"/>
     </item>
     <item>
       <title>Default Classes</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-default-classes</link>
+      <link>https://xaringan.gallery/examples/default-classes</link>
       <description>Setting default classes for all slides</description>
       <category>layout</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-default-classes</guid>
+      <guid>https://xaringan.gallery/examples/default-classes</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-default-classes/preview.png" medium="image" type="image/png" width="1550" height="770"/>
+      <media:content url="https://xaringan.gallery/examples/default-classes/preview.png" medium="image" type="image/png" width="1550" height="770"/>
     </item>
     <item>
       <title>Code highlighting with flair</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-flair-highlight</link>
+      <link>https://xaringan.gallery/examples/flair-highlight</link>
       <description>Custom code highlighting with flair R package</description>
       <category>code highlighting</category>
       <category>syntax highlighting</category>
       <category>flair</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-flair-highlight</guid>
+      <guid>https://xaringan.gallery/examples/flair-highlight</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-flair-highlight/preview.png" medium="image" type="image/png" width="2184" height="1244"/>
+      <media:content url="https://xaringan.gallery/examples/flair-highlight/preview.png" medium="image" type="image/png" width="2184" height="1244"/>
     </item>
     <item>
       <title>Full Screen Plot</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-full-screen-plot</link>
+      <link>https://xaringan.gallery/examples/full-screen-plot</link>
       <description>Properly size a plot to completely fill the slide</description>
       <category>css</category>
       <category>content classes</category>
       <category>plot</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-full-screen-plot</guid>
+      <guid>https://xaringan.gallery/examples/full-screen-plot</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-full-screen-plot/preview.png" medium="image" type="image/png" width="1262" height="958"/>
+      <media:content url="https://xaringan.gallery/examples/full-screen-plot/preview.png" medium="image" type="image/png" width="1262" height="958"/>
     </item>
     <item>
       <title>Hex Header</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-hex-header</link>
+      <link>https://xaringan.gallery/examples/hex-header</link>
       <description>Add row of hexes to header of slide</description>
       <category>css</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-hex-header</guid>
+      <guid>https://xaringan.gallery/examples/hex-header</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-hex-header/preview.png" medium="image" type="image/png" width="2098" height="1146"/>
+      <media:content url="https://xaringan.gallery/examples/hex-header/preview.png" medium="image" type="image/png" width="2098" height="1146"/>
     </item>
     <item>
       <title>No Padding Slide</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-no-padding-slide</link>
+      <link>https://xaringan.gallery/examples/no-padding-slide</link>
       <description>Create slides that contain no padding</description>
       <category>css</category>
       <category>content classes</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-no-padding-slide</guid>
+      <guid>https://xaringan.gallery/examples/no-padding-slide</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-no-padding-slide/preview.png" medium="image" type="image/png" width="1252" height="668"/>
+      <media:content url="https://xaringan.gallery/examples/no-padding-slide/preview.png" medium="image" type="image/png" width="1252" height="668"/>
     </item>
     <item>
       <title>No Slide Number</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-no-slide-number</link>
+      <link>https://xaringan.gallery/examples/no-slide-number</link>
       <description>Remove all slide numbers</description>
       <category>css</category>
       <category>slide number</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-no-slide-number</guid>
+      <guid>https://xaringan.gallery/examples/no-slide-number</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-no-slide-number/preview.png" medium="image" type="image/png" width="2322" height="1712"/>
+      <media:content url="https://xaringan.gallery/examples/no-slide-number/preview.png" medium="image" type="image/png" width="2322" height="1712"/>
     </item>
     <item>
       <title>Omit Slide Number</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-omit-slide-number</link>
+      <link>https://xaringan.gallery/examples/omit-slide-number</link>
       <description>Selectively omit slide numbers</description>
       <category>css</category>
       <category>slide number</category>
       <category>content classes</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-omit-slide-number</guid>
+      <guid>https://xaringan.gallery/examples/omit-slide-number</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-omit-slide-number/preview.png" medium="image" type="image/png" width="2322" height="1712"/>
+      <media:content url="https://xaringan.gallery/examples/omit-slide-number/preview.png" medium="image" type="image/png" width="2322" height="1712"/>
     </item>
     <item>
       <title>Side by Side Code and Plot</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-side-by-side-code-plot</link>
+      <link>https://xaringan.gallery/examples/side-by-side-code-plot</link>
       <description>Show code and plot on same slide without copy-paste</description>
       <category>plot</category>
       <category>pull</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-side-by-side-code-plot</guid>
+      <guid>https://xaringan.gallery/examples/side-by-side-code-plot</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-side-by-side-code-plot/preview.gif" medium="image" type="image/gif"/>
+      <media:content url="https://xaringan.gallery/examples/side-by-side-code-plot/preview.gif" medium="image" type="image/gif"/>
     </item>
     <item>
       <title>Transparent Backgrounds for Plot</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-22-transparent-plot</link>
+      <link>https://xaringan.gallery/examples/transparent-plot</link>
       <description>Remove background of plots</description>
       <category>plot</category>
-      <guid>https://xaringan.gallery/examples/2021-05-22-transparent-plot</guid>
+      <guid>https://xaringan.gallery/examples/transparent-plot</guid>
       <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-22-transparent-plot/preview.png" medium="image" type="image/png" width="2290" height="1694"/>
+      <media:content url="https://xaringan.gallery/examples/transparent-plot/preview.png" medium="image" type="image/png" width="2290" height="1694"/>
     </item>
     <item>
       <title>Nested Pulls</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-21-nested-pulls</link>
+      <link>https://xaringan.gallery/examples/nested-pulls</link>
       <description>The layout property can be used to create layout slides</description>
       <category>pull</category>
       <category>content classes</category>
-      <guid>https://xaringan.gallery/examples/2021-05-21-nested-pulls</guid>
+      <guid>https://xaringan.gallery/examples/nested-pulls</guid>
       <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-21-nested-pulls/preview.png" medium="image" type="image/png" width="3160" height="1666"/>
+      <media:content url="https://xaringan.gallery/examples/nested-pulls/preview.png" medium="image" type="image/png" width="3160" height="1666"/>
     </item>
     <item>
       <title>Adjustable Pull</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-20-adjustable-pull</link>
+      <link>https://xaringan.gallery/examples/adjustable-pull</link>
       <description>Adjust the widths of .pull-left and .pull-right</description>
       <category>css</category>
       <category>content classes</category>
       <category>pull</category>
-      <guid>https://xaringan.gallery/examples/2021-05-20-adjustable-pull</guid>
+      <guid>https://xaringan.gallery/examples/adjustable-pull</guid>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-20-adjustable-pull/preview.png" medium="image" type="image/png" width="2242" height="1518"/>
+      <media:content url="https://xaringan.gallery/examples/adjustable-pull/preview.png" medium="image" type="image/png" width="2242" height="1518"/>
     </item>
     <item>
       <title>Chaining Content Classes</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-20-chaining-content-classes</link>
+      <link>https://xaringan.gallery/examples/chaining-content-classes</link>
       <description>Syntax trick for cleaner use of content classes</description>
       <category>css</category>
       <category>content classes</category>
-      <guid>https://xaringan.gallery/examples/2021-05-20-chaining-content-classes</guid>
+      <guid>https://xaringan.gallery/examples/chaining-content-classes</guid>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-20-chaining-content-classes/preview.png" medium="image" type="image/png" width="1414" height="864"/>
+      <media:content url="https://xaringan.gallery/examples/chaining-content-classes/preview.png" medium="image" type="image/png" width="1414" height="864"/>
     </item>
     <item>
       <title>Content Classes</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-20-content-classes</link>
+      <link>https://xaringan.gallery/examples/content-classes</link>
       <description>Use css to create content classes to style elements</description>
       <category>css</category>
       <category>content classes</category>
-      <guid>https://xaringan.gallery/examples/2021-05-20-content-classes</guid>
+      <guid>https://xaringan.gallery/examples/content-classes</guid>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-20-content-classes/preview.png" medium="image" type="image/png" width="1030" height="570"/>
+      <media:content url="https://xaringan.gallery/examples/content-classes/preview.png" medium="image" type="image/png" width="1030" height="570"/>
     </item>
     <item>
       <title>typed</title>
       <dc:creator>Emil Hvitfeldt Hansen</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-11-typed</link>
+      <link>https://xaringan.gallery/examples/typed</link>
       <description>A short description of the post.</description>
       <category>typed.js</category>
-      <guid>https://xaringan.gallery/examples/2021-05-11-typed</guid>
+      <guid>https://xaringan.gallery/examples/typed</guid>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-11-typed/preview.png" medium="image" type="image/png" width="866" height="368"/>
+      <media:content url="https://xaringan.gallery/examples/typed/preview.png" medium="image" type="image/png" width="866" height="368"/>
     </item>
     <item>
       <title>fancy first letter</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-09-fancy-first-letter</link>
+      <link>https://xaringan.gallery/examples/fancy-first-letter</link>
       <description>Big first letters</description>
       <category>css</category>
-      <guid>https://xaringan.gallery/examples/2021-05-09-fancy-first-letter</guid>
+      <guid>https://xaringan.gallery/examples/fancy-first-letter</guid>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-09-fancy-first-letter/preview.png" medium="image" type="image/png" width="720" height="448"/>
+      <media:content url="https://xaringan.gallery/examples/fancy-first-letter/preview.png" medium="image" type="image/png" width="720" height="448"/>
     </item>
     <item>
       <title>particles images</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-09-particle-images</link>
+      <link>https://xaringan.gallery/examples/particle-images</link>
       <description>Floating hex stickers</description>
       <category>particles.js</category>
-      <guid>https://xaringan.gallery/examples/2021-05-09-particle-images</guid>
+      <guid>https://xaringan.gallery/examples/particle-images</guid>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-09-particle-images/preview.png" medium="image" type="image/png" width="2330" height="1562"/>
+      <media:content url="https://xaringan.gallery/examples/particle-images/preview.png" medium="image" type="image/png" width="2330" height="1562"/>
     </item>
     <item>
       <title>venta.js birds</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-09-ventajs-birds</link>
+      <link>https://xaringan.gallery/examples/ventajs-birds</link>
       <description>A short description of the post.</description>
       <category>vanta.js</category>
-      <guid>https://xaringan.gallery/examples/2021-05-09-ventajs-birds</guid>
+      <guid>https://xaringan.gallery/examples/ventajs-birds</guid>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-09-ventajs-birds/preview.png" medium="image" type="image/png" width="2308" height="1558"/>
+      <media:content url="https://xaringan.gallery/examples/ventajs-birds/preview.png" medium="image" type="image/png" width="2308" height="1558"/>
     </item>
     <item>
       <title>layout property</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-08-layout-example</link>
+      <link>https://xaringan.gallery/examples/layout-example</link>
       <description>The layout property can be used to create layout slides</description>
       <category>remark properties</category>
       <category>layout</category>
-      <guid>https://xaringan.gallery/examples/2021-05-08-layout-example</guid>
+      <guid>https://xaringan.gallery/examples/layout-example</guid>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-08-layout-example/preview.png" medium="image" type="image/png" width="1148" height="682"/>
+      <media:content url="https://xaringan.gallery/examples/layout-example/preview.png" medium="image" type="image/png" width="1148" height="682"/>
     </item>
     <item>
       <title>shiki syntax highlighting</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>
-      <link>https://xaringan.gallery/examples/2021-05-09-shiki</link>
+      <link>https://xaringan.gallery/examples/shiki</link>
       <description>Beautiful syntax highlighting with shiki</description>
       <category>syntax highlighting</category>
-      <guid>https://xaringan.gallery/examples/2021-05-09-shiki</guid>
+      <guid>https://xaringan.gallery/examples/shiki</guid>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://xaringan.gallery/examples/2021-05-09-shiki/preview.png" medium="image" type="image/png" width="2170" height="1560"/>
+      <media:content url="https://xaringan.gallery/examples/shiki/preview.png" medium="image" type="image/png" width="2170" height="1560"/>
     </item>
   </channel>
 </rss>
