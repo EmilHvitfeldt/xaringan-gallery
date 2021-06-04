@@ -12,7 +12,17 @@
       <link>https://xaringan.gallery</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 21 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>lexis theme</title>
+      <dc:creator>John Paul Helveston</dc:creator>
+      <link>https://xaringan.gallery/themes/lexis-theme</link>
+      <description>Themes by John Paul Helveston</description>
+      <category>theme</category>
+      <guid>https://xaringan.gallery/themes/lexis-theme</guid>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://xaringan.gallery/themes/lexis-theme/preview.gif" medium="image" type="image/gif"/>
+    </item>
     <item>
       <title>NES.css</title>
       <dc:creator>Emil Hvitfeldt</dc:creator>

@@ -1,5 +1,24 @@
 [
   {
+    "path": "themes/lexis-theme/",
+    "title": "lexis theme",
+    "description": "Themes by John Paul Helveston",
+    "author": [
+      {
+        "name": "John Paul Helveston",
+        "url": {}
+      }
+    ],
+    "date": "2021-06-04",
+    "categories": [
+      "theme"
+    ],
+    "contents": "\nλέξις (lexis) is a theme for the xaringan Rpackage for making slides. It has a light gray background and uses Fira Sans Condensed for headers, Inter for body text, and SFMono-Regular for mono text (i.e. code). The theme copies ideas from several other themes, most notably from Allison Hill’s xaringan workshop. It also uses many of the wonderful features from Garrick Aden-Buie’s xaringanExtra package.\nResult\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\nMaterial\nAll material can be found here.\n\n\n\n",
+    "preview": "themes/lexis-theme/preview.gif",
+    "last_modified": "2021-06-04T15:28:12-07:00",
+    "input_file": {}
+  },
+  {
     "path": "themes/nes-theme/",
     "title": "NES.css",
     "description": "Themes inspired by NES.css",

@@ -1,0 +1,34 @@
+---
+title: "lexis theme"
+description: |
+  Themes by John Paul Helveston
+author:
+  - name: John Paul Helveston
+date: 06-04-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - theme
+preview: preview.gif
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+λέξις (lexis) is a theme for the [xaringan Rpackage](https://github.com/yihui/xaringan) for making slides. It has a light gray background and uses [Fira Sans Condensed](https://fonts.google.com/specimen/Fira+Sans+Condensed) for headers, [Inter](https://fonts.google.com/specimen/Inter) for body text, and [SFMono-Regular](https://developer.apple.com/fonts/) for mono text (i.e. code). The theme copies ideas from several other themes, most notably from [Allison Hill](https://alison.rbind.io/)'s xaringan [workshop](https://github.com/rstudio-education/arm-workshop-rsc2019). It also uses many of the wonderful features from [Garrick Aden-Buie](https://garrickadenbuie.com/)'s [xaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/#/) package.
+
+# Result
+
+```{r, echo=FALSE}
+xaringanExtra::embed_xaringan(
+  url = "../../static/themes/lexis-theme/index.html", 
+  ratio = "16:9"
+)
+```
+
+# Material
+
+All material can be found [here](https://github.com/jhelvy/lexis).
